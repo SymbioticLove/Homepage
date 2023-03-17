@@ -1,0 +1,86 @@
+html {
+    font-size: 100%; 
+}
+a {
+    text-decoration: none;
+    color: #ce4760;
+    text-shadow: 1px 1px 1px #193b1e;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(./images-for-LPgen1/pagebackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(228,240,223);
+    background-blend-mode: multiply;
+}
+#out-links, .call-to-action, #button {
+    box-shadow: inset 0px 0px 15px #193b1e;
+}
+#top-bar {
+    padding-bottom: 1rem;
+}
+#top-bar h1 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
+    padding-top: 1.25rem;
+    font-family: 'Great Vibes', cursive;
+    color: #e4f0df;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 1px #ce4760;
+}
+.call-to-action {
+    text-align: center;
+    padding: .5rem;
+    margin: 1.5rem 1rem 2.65rem;
+    background-color: #e4f0df;
+    background-image: url(./images-for-LPgen1/sky2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    border-radius: 5px 5px 25px 25px;
+}
+.call-to-action p {
+    font-family: 'figtree', sans-serif;
+    color: #193b1e;
+}
+.call-to-action h1 {
+    font-family: 'dancing script';
+    margin-left: .1rem;
+    margin-right: .1rem;
+    color: #193b1e;
+}
+h2 {
+    color: #193b1e;
+    font-family: 'prata', serif;
+}
+#lowerCta {
+    border-radius: 25px 25px 5px 5px;
+}
+#button {
+    background-image: url(./images-for-LPgen1/buttonsky.jpg);
+    background-color: #e4f0df;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding-inline-start: 0;
+    height: 3rem;
+    text-align: center;
+    padding: .5rem;
+    margin: 0 3rem 1rem;
+    border-radius: 20px 10px 20px 10px;
+}
+h5 {
+    margin: 0;
+    margin-block: 0;
+    font-size: 1.25rem;
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+.call-to-action h3 {
+    font-family: 'indie flower', sans-serif;
+    color: #193b1e;
+}
