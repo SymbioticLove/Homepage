@@ -40,7 +40,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    border-radius: 5px 5px 25px 25px;
+    border-radius: 25px;
 }
 .call-to-action p {
     font-family: 'figtree', sans-serif;
@@ -58,7 +58,7 @@ h2 {
     font-family: 'prata', serif;
 }
 #lowerCta {
-    border-radius: 25px 25px 5px 5px;
+    border-radius: 25px;
 }
 #button {
     background-image: url(/images-for-LPgen1/buttonsky.webp);
@@ -68,7 +68,7 @@ h2 {
     padding-inline-start: 0;
     text-align: center;
     margin: 0 3rem 1rem;
-    border-radius: 20px 10px 20px 10px;
+    border-radius: 20px;
 }
 h3 {
     margin: 0;
