@@ -3,38 +3,52 @@ html {
 }
 a {
     text-decoration: none;
-    color: #ce4760;
+    color: #572cb5;
     text-shadow: 1px 1px 1px #193b1e;
 }
 body {
     margin: 0;
-    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(/images-for-LPgen1/pagebackground.webp);
+    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(/images-for-LPgen1/Testbackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgb(228,240,223);
-    background-blend-mode: multiply;
+    background-color: #4c5b5c;
+    background-blend-mode: color-burn;
 }
 #out-links, .call-to-action, #button {
     box-shadow: inset 0px 0px 15px #193b1e;
 }
 #top-bar {
-    padding-bottom: 1rem;
+    position: relative;
+    height: 175px;
+    background-image: linear-gradient(to top, rgb(54, 65, 86, .7) 40%, transparent 80%), url(/images-for-LPgen1/testbar.jpg);
+    background-size: cover;
+    background-color: #4c5b5c;
+    background-blend-mode: overlay;
 }
 #top-bar h1 {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 1rem 0 0;
-    padding-top: 1.25rem;
+    position: absolute;
+    right: 5vw;
+    margin: 3rem 0 0 0;
     font-family: 'Great Vibes', cursive;
-    color: #e4f0df;
-    font-size: 2rem;
     letter-spacing: .1rem;
-    text-shadow: 1px 1px 1px #ce4760;
+    font-size: 2.25rem;
+    color: #fffceb;
+    text-shadow: 4px 2px 4px #193b1e;
+}
+#top-bar img:hover {
+    transform: scale(1.2);
+}
+#logo {
+    margin: 1rem 0 0 1.5rem;
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+
 }
 .call-to-action {
     text-align: center;
     padding: .5rem;
-    margin: 1.5rem 1rem 2.65rem;
+    margin: 2.07rem 1rem 2.08rem;
     background-color: #e4f0df;
     background-image: url(/images-for-LPgen1/sky2.webp);
     background-size: cover;
@@ -50,7 +64,7 @@ body {
     font-family: 'great vibes', cursive;
     margin-left: .1rem;
     margin-right: .1rem;
-    letter-spacing: .15rem;
+    letter-spacing: .05rem;
     color: #193b1e;
 }
 h2 {
@@ -75,11 +89,56 @@ h3 {
     margin-block: 0;
     font-size: 1.25rem;
 }
-#footer {
-    position: absolute;
-    bottom: 0;
-}
-footer h3 {
+#bottom h3 {
     font-family: 'indie flower', sans-serif;
     color: #193b1e;
+    font-size: 1rem;
+}
+#bottom ul {
+    padding-inline-start: 0;
+    padding: 0 2rem;
+}
+#bottom li {
+    padding: .5rem 0;
+    font-family: 'figtree', sans-serif;
+}
+footer {
+    background-color: #212d40;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    background-image: url(/images-for-LPgen1/testfooter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+footer p {
+    text-align: left;
+    color: #e4f0df;
+    margin: 0;
+    font-size: .87rem;
+    font-family: 'figtree', sans-serif;
+}
+#social-links {
+    list-style: none;
+    display: flex;
+    margin-left: 30vw;
+    justify-content: space-around;
+    margin-block: 0;
+    margin-top: -3vh;
+}
+#social-links img {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+#copy {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
