@@ -15,7 +15,7 @@ body {
     background-blend-mode: color-burn;
 }
 #out-links, .call-to-action, #button, #stripe {
-    box-shadow: inset 0px 0px 15px #193b1e;
+    box-shadow: inset 0px 0px 40px #193b1e;
 }
 #top-bar {
     position: relative;
@@ -49,13 +49,14 @@ body {
 .call-to-action {
     text-align: center;
     padding: .5rem;
-    margin: 2.07rem 1rem 2.08rem;
+    margin: 3.65rem auto;
     background-color: #e4f0df;
     background-image: url(./images-for-LPgen1/sky2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     border-radius: 25px;
+    width: 75%;
 }
 .call-to-action p {
     font-family: 'figtree', sans-serif;
@@ -144,7 +145,7 @@ footer p {
 #copy {
     position: absolute;
     bottom: 0;
-    right: 0;
+    text-align: right;
 }
 .charity {
     box-sizing: border-box;
@@ -161,10 +162,14 @@ footer p {
 .charity:hover {
     transform: scale(1.2);
 }
+@media only screen and (orientation: portrait) {
+    footer {
+        height: 150px;
+    }
+}
 @media only screen and (min-width: 653px) and (orientation: landscape) {
     .ls {
-        display: flex;
-        justify-content: center;
+        display: grid;
     }
     .social-links {
         display: none;
