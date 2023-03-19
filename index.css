@@ -8,7 +8,7 @@ a {
 }
 body {
     margin: 0;
-    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(/images-for-LPgen1/Testbackground.webp);
+    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(./images-for-LPgen1/Testbackground.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #4c5b5c;
@@ -51,7 +51,7 @@ body {
     padding: .5rem;
     margin: 2.07rem 1rem 2.08rem;
     background-color: #e4f0df;
-    background-image: url(/images-for-LPgen1/sky2.webp);
+    background-image: url(./images-for-LPgen1/sky2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -109,7 +109,7 @@ footer {
     bottom: 0;
     left: 0;
     height: 130px;
-    background-image: url(/images-for-LPgen1/testfooter.webp);
+    background-image: url(./images-for-LPgen1/testfooter.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
@@ -203,7 +203,7 @@ footer p {
         display: flex;
         padding-top: 1.5rem;
         background-color: #e4f0df;
-        background-image: url(/images-for-LPgen1/sky2.webp);
+        background-image: url(./images-for-LPgen1/sky2.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: overlay;
@@ -211,5 +211,10 @@ footer p {
     }
     #stripe li {
         margin: 0 1rem;
+        font-family: 'Prata';
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: .05rem;
+        color: #193b1e;
     }
 }
