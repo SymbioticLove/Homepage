@@ -14,7 +14,7 @@ body {
     background-color: #4c5b5c;
     background-blend-mode: color-burn;
 }
-#out-links, .call-to-action, #button {
+#out-links, .call-to-action, #button, #stripe {
     box-shadow: inset 0px 0px 15px #193b1e;
 }
 #top-bar {
