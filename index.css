@@ -146,6 +146,18 @@ footer p {
     bottom: 0;
     right: 0;
 }
+.charity {
+    box-sizing: border-box;
+    padding: 1rem .5rem 2.2rem;
+    text-shadow: none;
+    font-weight: bold;
+    height: 48px;
+    display: inline-flex;
+    box-shadow: .25rem .25rem .375rem black;
+    background-color: #193b1e;
+    color: #e4f0df;
+    border-radius: 1rem;
+}
 @media only sreen and (orientation: portrait) {
     img {
         transform: none;
