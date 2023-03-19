@@ -175,7 +175,7 @@ footer p {
     #lsSocials {
         display: flex;
         list-style: none;
-        margin-left: 8rem;
+        margin-left: -1rem;
         padding-inline-start: 0;
         margin-top: 0;
     }
@@ -208,6 +208,8 @@ footer p {
         background-repeat: no-repeat;
         background-blend-mode: overlay;
         border-radius: 0 0 25px;
+        margin-left: 9rem;
+        width: 36rem;
     }
     #stripe li {
         margin: 0 1rem;
