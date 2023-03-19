@@ -8,7 +8,7 @@ a {
 }
 body {
     margin: 0;
-    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(/images-for-LPgen1/Testbackground.jpg);
+    background-image: linear-gradient(45deg, rgb(228, 240, 223, .7) 65%, rgb(255, 252, 253, .7) 100%), url(/images-for-LPgen1/Testbackground.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #4c5b5c;
@@ -20,9 +20,7 @@ body {
 #top-bar {
     position: relative;
     height: 175px;
-    background-image: linear-gradient(to top, rgb(54, 65, 86, .7) 40%, transparent 80%), url(/images-for-LPgen1/testbar.jpg);
     background-size: cover;
-    background-color: #4c5b5c;
     background-blend-mode: overlay;
 }
 #top-bar h1 {
@@ -32,8 +30,11 @@ body {
     font-family: 'Great Vibes', cursive;
     letter-spacing: .1rem;
     font-size: 2.25rem;
-    color: #fffceb;
-    text-shadow: 4px 2px 4px #193b1e;
+    color: #e4f0df;
+    text-shadow: 4px 2px 4px #572cb5;
+}
+#lsSocials {
+    display: none;
 }
 #top-bar img:hover {
     transform: scale(1.2);
@@ -74,7 +75,7 @@ h2 {
 #lowerCta {
     border-radius: 25px;
 }
-#button {
+/* #button {             Removed Button Styles (TEST v1.2.1.0)
     background-image: url(/images-for-LPgen1/buttonsky.webp);
     background-color: #e4f0df;
     background-size: cover;
@@ -83,19 +84,19 @@ h2 {
     text-align: center;
     margin: 0 3rem 1rem;
     border-radius: 20px;
-}
+} */
 h3 {
     margin: 0;
     margin-block: 0;
     font-size: 1.25rem;
 }
-#bottom h3 {
+#bottom h3 {                   
     font-family: 'indie flower', sans-serif;
     color: #193b1e;
     font-size: 1rem;
 }
 #bottom ul {
-    padding-inline-start: 0;
+    padding-inline-start: 0;                            /*Bottom Disclaimer Styles (to be removed in final version)*/
     padding: 0 2rem;
 }
 #bottom li {
@@ -108,7 +109,7 @@ footer {
     bottom: 0;
     left: 0;
     height: 130px;
-    background-image: url(/images-for-LPgen1/testfooter.jpg);
+    background-image: url(/images-for-LPgen1/testfooter.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
@@ -132,8 +133,11 @@ footer p {
     margin-block: 0;
     margin-top: -3vh;
 }
+#social-links p {
+    display: none;
+}
 #social-links img {
-    border-radius: 50px;
+    border-radius:  25px;
     height: 50px;
     width: 50px;
 }
@@ -141,4 +145,71 @@ footer p {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+@media only sreen and (orientation: portrait) {
+    img {
+        transform: none;
+    }
+}
+@media only screen and (min-width: 653px) and (orientation: landscape) {
+    .ls {
+        display: flex;
+        justify-content: center;
+    }
+    .social-links {
+        display: none;
+    }
+    #top-bar h1 {
+        font-size: 4.25rem;
+        letter-spacing: .25rem;
+        top: 4rem;
+    }
+    #logo {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 4.5rem;
+        bottom: 1.75rem;
+        margin: 0;
+    }
+    #lsSocials {
+        display: flex;
+        list-style: none;
+        margin-left: 8rem;
+        padding-inline-start: 0;
+        margin-top: 0;
+    }
+    #lsSocials img {
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+    }
+    #lsSocials p {
+        font-family: 'Prata';
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: .05rem;
+        color: #193b1e;
+        margin-block-end: 0;
+        margin-left: 6rem;
+    }
+    #extra-buttons {
+        display: inherit;
+    }
+    #button {
+        background-image: none;
+    }
+    #stripe {
+        display: flex;
+        padding-top: 1.5rem;
+        background-color: #e4f0df;
+        background-image: url(/images-for-LPgen1/sky2.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        border-radius: 0 0 25px;
+    }
+    #stripe li {
+        margin: 0 1rem;
+    }
 }
