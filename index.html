@@ -17,7 +17,15 @@
         <link href="/index.css" rel="stylesheet"> <!--CSS LINK-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Great+Vibes&family=Indie+Flower&family=Prata&display=swap" rel="stylesheet">
+        <!--Defer font loading-->
+        <script>
+            window.addEventListener('load', function() {
+              const link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = 'https://fonts.googleapis.com/css2?family=Figtree&family=Great+Vibes&family=Indie+Flower&family=Prata&display=swap';
+              document.head.appendChild(link);
+            });
+        </script>         
     </head>
     <body>
         <div>   <!--Wrapper-->
@@ -84,7 +92,7 @@
                 </ul>
             </div>
             <footer>    <!--Copyright/Version info-->
-                <p>Symbiotic Love&#0153; website open alpha version 1.3.1.0, March 2023. Viewed best at 1920x1080 resolution or lower. Symbiotic Love values your privacy. We DO NOT sell your data.
+                <p>Symbiotic Love&#0153; website open alpha version 1.3.2.0, March 2023. Viewed best at 1920x1080 resolution or lower. Symbiotic Love values your privacy. We DO NOT sell your data.
                 <p id="copy">&copy;2023 Symbiotic Love. This code is open-source and may be accessed by anyone, but may not be published on any other server.</p>
             </footer>
         </div>
