@@ -158,10 +158,8 @@ footer p {
     color: #e4f0df;
     border-radius: 1rem;
 }
-@media only sreen and (orientation: portrait) {
-    img {
-        transform: none;
-    }
+.charity:hover {
+    transform: scale(1.2);
 }
 @media only screen and (min-width: 653px) and (orientation: landscape) {
     .ls {
