@@ -177,14 +177,15 @@ footer p {
     #top-bar h1 {
         font-size: 4.25rem;
         letter-spacing: .25rem;
-        top: 4rem;
+        top:  0rem;
+        right: 20rem;
     }
     #logo {
         height: 150px;
         width: 150px;
         position: absolute;
-        left: 4.5rem;
-        bottom: 1.75rem;
+        top: 1rem;
+        right: 6rem;
         margin: 0;
     }
     #lsSocials {
@@ -222,7 +223,7 @@ footer p {
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: overlay;
-        border-radius: 0 0 25px;
+        border-radius: 0 0 25px 25px;
         margin-left: 9rem;
         width: 36rem;
     }
