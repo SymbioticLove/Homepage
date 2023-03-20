@@ -167,6 +167,27 @@ footer p {
         height: 150px;
     }
 }
+@media only screen and (max-width: 640px) {
+    #social-links {
+        margin-top: 2vh;
+    }
+    #top-bar h1 {
+        width: 100px;
+        left: 1rem;
+        top: -2rem;
+    }
+    #logo {
+        margin: 1rem 0 0 5rem;
+    }
+}
+@media only screen and (max-width: 343px) {
+    #social-links {
+        display: none;
+    }
+    #logo {
+        margin: -7rem 0 0 11rem;  
+    }
+}
 @media only screen and (min-width: 653px) and (orientation: landscape) {
     .ls {
         display: grid;
@@ -177,7 +198,7 @@ footer p {
     #top-bar h1 {
         font-size: 4.25rem;
         letter-spacing: .25rem;
-        top:  0rem;
+        top:  5rem;
         right: 20rem;
     }
     #logo {
@@ -234,5 +255,9 @@ footer p {
         font-weight: bold;
         letter-spacing: .05rem;
         color: #572cb5;
+    }
+    #moon {
+        position: absolute;
+        left: 5rem;
     }
 }
