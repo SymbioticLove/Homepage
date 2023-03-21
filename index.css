@@ -24,14 +24,7 @@ body {
     background-blend-mode: overlay;
 }
 #top-bar h1 {
-    position: absolute;
-    right: 5vw;
-    margin: 3rem 0 0 0;
-    font-family: 'Great Vibes', cursive;
-    letter-spacing: .1rem;
-    font-size: 2.25rem;
-    color: #e4f0df;
-    text-shadow: 4px 2px 4px #572cb5;
+    display: none;
 }
 #lsSocials {
     display: none;
@@ -162,6 +155,9 @@ footer p {
 .charity:hover {
     transform: scale(1.2);
 }
+#stripe {
+    display: none;
+}
 @media only screen and (orientation: portrait) {
     footer {
         height: 150px;
@@ -188,25 +184,19 @@ footer p {
         margin: -7rem 0 0 11rem;  
     }
 }
-@media only screen and (min-width: 975px) and (orientation: landscape) {
+@media only screen and (min-width: 875px) {
     .ls {
         display: grid;
     }
     .social-links {
         display: none;
     }
-    #top-bar h1 {
-        font-size: 4.25rem;
-        letter-spacing: .25rem;
-        top:  5rem;
-        right: 20rem;
-    }
     #logo {
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         position: absolute;
-        top: 1rem;
-        right: 6rem;
+        top: 3rem;
+        right: 2rem;
         margin: 0;
     }
     #lsSocials {
@@ -236,6 +226,18 @@ footer p {
     #button {
         background-image: none;
     }
+    #stripe li {
+        margin: 0 1rem;
+        font-family: 'Prata';
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: .05rem;
+        color: #572cb5;
+    }
+    #moon {
+        position: absolute;
+        left: 5rem;
+    }
     #stripe {
         display: flex;
         padding-top: 1.5rem;
@@ -248,16 +250,18 @@ footer p {
         margin-left: 9rem;
         width: 36rem;
     }
-    #stripe li {
-        margin: 0 1rem;
-        font-family: 'Prata';
-        font-size: 1.25rem;
-        font-weight: bold;
-        letter-spacing: .05rem;
-        color: #572cb5;
-    }
-    #moon {
-        position: absolute;
-        left: 5rem;
+    @media only screen and (min-width: 1408px) {
+        #top-bar h1 {
+            display: block;
+            position: absolute;
+            right: 14rem;
+            top: 6rem;
+            margin: 3rem 0 0 0;
+            font-family: 'Indie Flower', serif;
+            letter-spacing: .1rem;
+            font-size: 3.25rem;
+            color: #e4f0df;
+            text-shadow: 4px 2px 4px #572cb5;
+        }
     }
 }
