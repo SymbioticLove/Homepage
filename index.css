@@ -54,7 +54,7 @@ body {
     margin: 0;
 }
 #Mission {
-    background-image: linear-gradient(to right, #e4f0df 15%, rgb(25, 59, 30, 1) 100%), url(./images-for-LPgen1/TopBG.jpg);
+    background-image: linear-gradient(to right, #e4f0df 15%, rgb(25, 59, 30, 1) 100%), url(./images-for-LPgen1/TopBG.webp);
     display: flex;
     justify-content: space-between;
     background-color: #e4f0df;
