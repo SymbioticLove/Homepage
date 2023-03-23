@@ -125,6 +125,7 @@ body {
     height: 48px;
     display: flex;
     justify-content: center;
+    line-height: 1.5rem;
 }
 .Shop {
     width: 100%;
