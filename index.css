@@ -81,6 +81,7 @@ body {
     border-radius: 2rem;
     box-shadow: -25px 25px 30px black;
     padding-bottom: 1rem;
+    line-height: 4rem;
 }
 #E1 {
     color: #e4f0df;
@@ -133,6 +134,7 @@ body {
     font-family: 'prata', sans-serif;
     color: #e4f0df;
     text-align: center;
+    line-height: 4rem;
 }
 #StoreButton {
     background-color: #e4f0df;
