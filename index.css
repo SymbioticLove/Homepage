@@ -88,7 +88,7 @@ body {
     font-family: 'prata', sans-serif;
     font-size: 2rem;
     letter-spacing: .15rem;
-    width: 50vw;
+    width: 100%;
     margin: auto;
     padding-top: 3rem;
     text-align: center;
@@ -127,7 +127,7 @@ body {
     justify-content: center;
 }
 .Shop {
-    width: 55vw;
+    width: 100%;
     margin: auto;
     padding-top: 3rem;
     font-size: 2rem;
