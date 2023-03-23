@@ -92,6 +92,7 @@ body {
     margin: auto;
     padding-top: 3rem;
     text-align: center;
+    text-shadow: 2px 2px 0px #193b1e;
 }
 #Charity {
     padding-inline-start: 0;
@@ -135,6 +136,7 @@ body {
     color: #e4f0df;
     text-align: center;
     line-height: 4rem;
+    text-shadow: 2px 2px 0px #193b1e;
 }
 #StoreButton {
     background-color: #e4f0df;
