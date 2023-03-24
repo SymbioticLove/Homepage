@@ -54,7 +54,7 @@ body {
     margin: 0;
 }
 #Mission {
-    background-image: linear-gradient(75deg,#e4f0df 27%, rgb(25, 59, 30, 1) 100%), url(./images-for-LPgen1/TopBG.webp);
+    background-image: linear-gradient(75deg,#e4f0df 27%, rgb(25, 59, 30, 1) 100%), url(https://symbiotic.love/images-for-LPgen1/TopBG.webp);
     display: flex;
     justify-content: space-between;
     background-color: #193b1e;
@@ -106,7 +106,7 @@ body {
     background-color: #ce4760;
     border-radius: 1rem;
     box-shadow: -8px 8px 16px #000;
-    background-image: url(./images-for-LPgen1/buttonsky.webp);
+    background-image: url(https://symbiotic.love/images-for-LPgen1/buttonsky.webp);
     background-size: cover;
     width: 13rem;
     background-blend-mode: soft-light;
@@ -150,7 +150,7 @@ body {
     text-align: center;
     border-radius: 1rem;
     box-shadow: -8px 8px 16px #000;
-    background-image: url(./images-for-LPgen1/buttonsky.webp);
+    background-image: url(https://symbiotic.love/images-for-LPgen1/buttonsky.webp);
     background-size: cover;
     background-blend-mode: soft-light;
     font-size: 1.25rem;
