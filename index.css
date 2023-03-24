@@ -162,7 +162,7 @@ body {
 #StoreButton:hover {
     transform: scale(1.2);
 }
-.PC {
+/* .PC {
     width: 90%;
     margin-left: 10.7vw;
     margin-top: 5rem;
@@ -216,7 +216,7 @@ div#Carousel.slick-initialized.slick-slider.slick-dotted {
     width: 21%;
     margin: 1rem 29vw;
     padding-bottom: 1rem;
-}
+} */
 #Footer {
     height: 21rem;
     width: 100%;
