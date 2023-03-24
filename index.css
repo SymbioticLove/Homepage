@@ -213,6 +213,7 @@ Footer {
     color: #193b1e;
     text-shadow: none;
     width: 80%;
+    overflow-wrap: anywhere;
 }
 #Div3 a {
     text-decoration: none;
