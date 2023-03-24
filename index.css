@@ -84,15 +84,13 @@ body {
     line-height: 4rem;
 }
 #E1 {
-    color: #e4f0df;
+    color: #193b1e;
     font-family: 'prata', sans-serif;
     font-size: 2rem;
-    letter-spacing: .15rem;
+    letter-spacing: .1rem;
     width: 100%;
     margin: auto;
-    padding-top: 3rem;
     text-align: center;
-    text-shadow: 2px 2px 0px #193b1e;
 }
 #Charity {
     padding-inline-start: 0;
@@ -105,19 +103,20 @@ body {
     padding: 1rem;
     text-align: center;
     margin: 1rem auto;
-    background-color: #e4f0df;
+    background-color: #ce4760;
     border-radius: 1rem;
     box-shadow: -8px 8px 16px black;
     background-image: url(./images-for-LPgen1/buttonsky.webp);
     background-size: cover;
-    background-blend-mode: overlay;
     width: 13rem;
+    background-blend-mode: soft-light;
+    text-shadow: 1px 1px 2px #fffceb;
 }
 .Charity:hover {
     transform: scale(1.2);
 }
 .Charlist {
-    color: #193b1e;
+    color: #fffceb;
     text-decoration: none;
     font-family: 'Figtree';
     font-size: 1.25rem;
@@ -140,23 +139,24 @@ body {
     text-shadow: 2px 2px 0px #193b1e;
 }
 #StoreButton {
-    background-color: #e4f0df;
+    background-color: #ce4760;
     display: block;
     width: 12rem;
     height: 4rem;
     margin: 3rem auto;
     padding: 1rem;
-    color: #193d1e;
+    color: #fffceb;
     text-decoration: none;
     text-align: center;
     border-radius: 1rem;
     box-shadow: -8px 8px 16px black;
     background-image: url(./images-for-LPgen1/buttonsky.webp);
     background-size: cover;
-    background-blend-mode: overlay;
+    background-blend-mode: soft-light;
     font-size: 1.25rem;
     font-family: 'Figtree';
     letter-spacing: .15rem;
+    text-shadow: 1px 1px 2px #fffceb;
 }
 #StoreButton:hover {
     transform: scale(1.2);
@@ -212,8 +212,8 @@ button.slick-next.slick-arrow:hover {
     transform: scale(1.2);
 }
 div#Carousel.slick-initialized.slick-slider.slick-dotted {
-    width: 26%;
-    margin: 1rem 18vw;
+    width: 21%;
+    margin: 1rem 29vw;
     padding-bottom: 1rem;
 }
 #Footer {
@@ -253,6 +253,21 @@ div#Carousel.slick-initialized.slick-slider.slick-dotted {
     font-size: .75rem;
     padding-right: .5rem;
     width: 25rem;
+}
+#Div1 {
+    background-color: inherit;
+    box-shadow: none;
+}
+#Div2 {
+    width: 100%;
+    border-radius: revert;
+    box-shadow: none;
+    background-color: #e4f0df;
+}
+#Div2 h3 {
+    color: #193b1e;
+    text-shadow: none;
+    width: 80%;
 }
 @media only screen and (max-width: 525px) and (Orientation: portrait) {
     #Social-Links {
