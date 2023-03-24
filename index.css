@@ -54,7 +54,7 @@ body {
     margin: 0;
 }
 #Mission {
-    background-image: linear-gradient(75deg,#e4f0df 27%, rgb(25, 59, 30, 1) 100%), url(https://symbiotic.love/images-for-LPgen1/TopBG.webp);
+    background-image: linear-gradient(75deg,#e4f0df 27%,rgb(25,59,30,1) 100%),url(https://symbiotic.love/images-for-LPgen1/TopBG.webp);
     display: flex;
     justify-content: space-between;
     background-color: #193b1e;
@@ -228,7 +228,7 @@ Footer {
     font-family:'indie flower',cursive;
     box-shadow: -5px 5px 5px #000;
 }
-@media only screen and (max-width: 525px) and (Orientation: portrait){
+@media only screen and (max-width:525px) and (Orientation:portrait){
     #Social-Links {
         Display: revert;
     }
@@ -236,7 +236,7 @@ Footer {
         margin: 9rem 0 0 0;
     }
 }
-@media only screen and (max-width: 400px) and (orientation: portrait){
+@media only screen and (max-width:400px) and (orientation:portrait){
     .Charity {
         margin: 1rem;
     }
