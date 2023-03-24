@@ -270,6 +270,19 @@ div#Carousel.slick-initialized.slick-slider.slick-dotted {
     text-shadow: none;
     width: 80%;
 }
+#Div3 a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: .15rem;
+    width: 30%;
+    margin: auto;
+    background-color: #e4f0df;
+    display: block;
+    text-align: center;
+    border-radius: 2rem;
+    color: #193b1e;
+    font-family: 'Indie Flower';
+}
 @media only screen and (max-width: 525px) and (Orientation: portrait) {
     #Social-Links {
         Display: revert;
