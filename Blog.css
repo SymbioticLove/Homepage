@@ -1,0 +1,218 @@
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    background-color: #e4f0df;
+    background-image: url(./images-for-LPgen1/sky2.webp);
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #193b1e;
+    width: 100%;
+}
+.Socials {
+    height: 58px;
+    width: 58px;
+}
+.Socials:hover {
+    transform: scale(1.2);
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    list-style: none;
+    margin: .5rem;
+}
+header li {
+    margin: .5rem;
+}
+header p {
+    display: none;
+}
+#Logo {
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+    margin: 1rem;
+}
+h1 {
+    margin: 9rem 0 1rem;
+    font-family:prata,sans-serif;
+    color: #e4f0df;
+    letter-spacing: .15rem;
+    font-size: 3.5rem;
+}
+nav {
+    background-color: #193b1e;
+    /* min-height: 210px; */ /*To be re-added with announcement*/
+    width: 45vw;
+    min-width: 360px;
+    border-radius: 0 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-inline: 1rem;
+    justify-content: space-around;
+}
+nav a {
+    border-radius: 10px;
+    color: #e4f0df;
+    font-family: 'Figtree',sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav a:hover {
+    color: #ce4760;
+    text-transform: uppercase;
+}
+#Banner {
+    background: url(./images-for-LPgen1/TopBG.webp) #e4f0df;
+    background-blend-mode: overlay;
+    height: 60vh;
+    background-size: cover;
+    min-height: 600px;
+}
+#Proud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Proud li {
+    padding: 1rem 0;
+    font-family:Figtree,sans-serif;
+    font-size: 1.25rem;
+    color: #193b1e;
+}
+h2 {
+    font-family:figtree,sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+    color: #193b1e;
+}
+#A {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 .5rem;
+}
+h3 {
+    width: 75%;
+    margin: 0 auto;
+    font-family:Prata,sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #e4f0df;
+}
+#Blog {
+    display: flex;
+    justify-content: space-between;
+}
+.B {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2rem;
+    border: 2px solid #193b1e;
+    border-radius: 25px;
+    padding: 2rem;
+    width: 40%;
+}
+.C {
+    display: flex;
+    justify-content: center;
+}
+#C {
+    margin: 0 auto 2rem;
+    border: 2px solid #193b1e;
+    border-radius: 25px;
+    padding: 2rem;
+    font-family:Figtree,sans-serif;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: .12rem;
+    width: 90%;
+    color: #193b1e;
+}
+h4 {
+    text-align: center;
+    font-family: great vibes;
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    color: #572cb5;
+}
+#Blog p {
+    font-family:Figtree,sans-serif;
+    line-height: 1.5rem;
+    text-align: center;
+    letter-spacing: .12rem;
+    color: #193b1e;
+}
+footer {
+    background-color: #193b1e;
+}
+footer img {
+    height: 58px;
+    width: 58px;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-inline: 0;
+    padding: 1rem;
+}
+footer li {
+    padding: 0 1rem;
+}
+footer p {
+    text-align: right;
+    color: #e4f0df;
+    font-family:Prata,sans-serif;
+    font-size: .75rem;
+    margin-block: 0;
+    padding: .5rem;
+}
+#Border {
+    background-color: #193b1e;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+@media screen and (max-width:800px){
+    h1 {
+        position: absolute;
+        margin: 0;
+        font-size: 1rem;
+        top: 14rem;
+        left: .5rem;
+    }
+}
+@media screen and (max-width:900px){
+    #Blog {
+        flex-direction: column;
+    }
+    .B {
+        width: 80%;
+    }
+    #C {
+        width: 80%;
+    }
+}
