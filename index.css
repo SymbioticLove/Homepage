@@ -23,6 +23,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
     box-shadow: 0 5px 30px #000;
 }
@@ -264,7 +266,7 @@ nav {
     border-radius: 0 0 25px;
     display: flex;
     flex-direction: column;
-    margin-top: 15rem;
+    margin-top: 14rem;
     box-shadow: 5px 5px 20px #000;
 }
 nav p {
