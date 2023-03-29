@@ -1,9 +1,0 @@
-<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
-  Header set Cache-Control "max-age=259200, public"
-</FilesMatch>
-<FilesMatch "\.css$">
-  Header set Cache-Control "max-age=86400, public"
-</FilesMatch>
-<FilesMatch "\.(ttf|woff|woff2)$">
-    Header set Cache-Control "max-age=2592000, public"
-</FilesMatch>
