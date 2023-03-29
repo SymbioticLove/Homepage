@@ -1,6 +1,7 @@
 <!Doctype HTML>
 <html lang="en-US">
     <head>
+        <meta name="description" content="Join our community of altruism and help spread awarness of global issues AND get free stuff!"
         <meta property="og:title" content="Be a Force for Change!">
         <meta property="og:description" content="Join our community of altruism and help spread awareness!">
         <meta property="og:image" content="https://symbiotic.love/images-for-LPgen1/Circlelogo.png">
@@ -10,9 +11,47 @@
         <meta charset="UTF-8">
         <title>Be a force for change!</title>
         <link href="/index.css" rel="stylesheet"> <!--CSS LINK-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Great+Vibes&family=Indie+Flower&family=Prata&display=swap" rel="stylesheet">
+        <script>
+            function loadFonts() {
+              var fontLink = document.createElement('link');
+              fontLink.href = 'https://fonts.googleapis.com/css2?family=Figtree&family=Great+Vibes&family=Indie+Flower&family=Prata&display=swap';
+              fontLink.rel = 'stylesheet';
+              fontLink.type = 'text/css';
+              var fontPreconnect1 = document.createElement('link');
+              fontPreconnect1.href = 'https://fonts.googleapis.com';
+              fontPreconnect1.rel = 'preconnect';
+              var fontPreconnect2 = document.createElement('link');
+              fontPreconnect2.href = 'https://fonts.gstatic.com';
+              fontPreconnect2.rel = 'preconnect';
+              fontPreconnect2.crossOrigin = 'anonymous';
+          
+              var fontLoader = document.createElement('script');
+              fontLoader.type = 'text/javascript';
+              fontLoader.async = true;
+              fontLoader.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+              fontLoader.onload = function() {
+                WebFont.load({
+                  google: {
+                    families: ['Figtree', 'Great Vibes', 'Indie Flower', 'Prata']
+                  }
+                });
+              };
+          
+              var fontWrapper = document.createElement('div');
+              fontWrapper.style.position = 'absolute';
+              fontWrapper.style.width = '0px';
+              fontWrapper.style.height = '0px';
+              fontWrapper.style.overflow = 'hidden';
+              fontWrapper.appendChild(fontPreconnect1);
+              fontWrapper.appendChild(fontPreconnect2);
+              fontWrapper.appendChild(fontLoader);
+              fontWrapper.appendChild(fontLink);
+          
+              document.body.appendChild(fontWrapper);
+            }
+          
+            window.addEventListener('load', loadFonts);
+        </script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-260945459-1">
         </script>
