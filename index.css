@@ -234,13 +234,16 @@ Footer {
     padding: .15rem;
     width: 30%;
     margin: auto;
-    background-color: #e4f0df;
     display: block;
     text-align: center;
-    border-radius: 2rem;
-    color: #193b1e;
-    font-family:'Indie Flower',cursive;
+    border-radius: 15px;
+    color: #fffceb;
+    font-family: 'Indie Flower',cursive;
     box-shadow: -5px 5px 20px #000;
+    background-color: #ce4760;
+    background-image: url(./images-for-LPgen1/buttonsky.webp);
+    background-size: cover;
+    background-blend-mode: soft-light;
 }
 #Div3 a:hover {
     transform: scale(1.2);
