@@ -82,11 +82,9 @@ body {
     text-shadow:1px 1px 0 #e4f0df;
 }
 .E1 {
-    background-color: #193b1e;
     width: 75vw;
-    margin: 5rem auto;
+    margin: 0 auto;
     border-radius: 2rem;
-    box-shadow:-8px 8px 16px #000;
     padding-bottom: 1rem;
     line-height: 4rem;
 }
