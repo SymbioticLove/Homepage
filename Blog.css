@@ -4,9 +4,6 @@ html {
 body {
     margin: 0;
     background-color: #e4f0df;
-    background-image: url(./images-for-LPgen1/sky2.webp);
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 header {
     display: flex;
