@@ -21,6 +21,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
     box-shadow: 0 5px 30px #000;
 }
@@ -63,6 +65,7 @@ body {
     background-color: #193b1e;
     background-blend-mode: hard-light;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 60vh;
     flex-direction: column-reverse;
@@ -227,6 +230,7 @@ Footer {
     font-size: 1.25rem;
     color: #193b1e;
     font-family:Figtree,sans-serif;
+    line-height: 3rem;
 }
 #Div3 a {
     text-decoration: none;
@@ -256,7 +260,7 @@ Footer {
 }
 nav {
     background-color: #193b1e;
-   /* min-height: 210px; */     /*To be removed with announcement of partnership*/
+    min-height: 210px;
     width: 45vw;
     min-width: 360px;
     border-radius: 0 0 25px;
@@ -275,12 +279,13 @@ nav p {
 nav a {
     color: #e4f0df;
     font-family:'Figtree',sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: none;
     height: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 nav a:hover {
     color: #ce4760;
@@ -305,6 +310,19 @@ nav a:hover {
 @media only screen and (max-width:700px) and (orientation:portrait){
     #Div3 a {
         width: 80%;
+        line-height: 2.5rem;
+    }
+    #Div2 P {
+        line-height: 1.5rem;
+    }
+    #Div2 h3 {
+        line-height: 3rem;
+    }
+    #E1 {
+        line-height: 3rem;
+    }
+    .Shop {
+        line-height: 3rem;
     }
 }
 @media only screen and (max-height:700px){
@@ -325,5 +343,14 @@ nav a:hover {
     nav {
         margin-top: 0;
         box-shadow: none;
+    }
+    #Phone {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:1300px){
+    nav a {
+        font-size: 1rem;
     }
 }
