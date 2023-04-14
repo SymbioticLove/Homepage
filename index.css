@@ -43,16 +43,6 @@ body {
 .Socials:hover {
     transform: scale(1.2);
 }
-#Store {
-    color: #e4f0df;
-    font-size: 2.3rem;
-    font-family: figtree, sans-serif;
-    text-decoration: none;
-}
-#Store:hover {
-    text-transform: uppercase;
-    color: #ce4760;
-}
 #C1 h1 {
     color: #e4f0df;
     letter-spacing: .1rem;
@@ -60,7 +50,7 @@ body {
     margin: 0;
 }
 #Mission {
-    background-image: linear-gradient(75deg,#e4f0df 27%, rgb(25, 59, 30, 1) 100%), url(./images-for-LPgen1/TopBG.webp);
+    background-image: linear-gradient(75deg,#e4f0df 75%, rgb(25, 59, 30, 1) 100%), url(./images-for-LPgen1/TopBG.webp);
     display: flex;
     background-color: #193b1e;
     background-blend-mode: hard-light;
@@ -97,11 +87,20 @@ body {
     margin: 2rem auto;
     text-align: center;
 }
+.E1 p {
+    text-align: center;
+    font-family:Figtree,sans-serif;
+    color: #193b1e;
+    letter-spacing: .05rem;
+    line-height: 3rem;
+    font-size: 1.25rem;
+}
 #Charity {
     padding-inline-start: 0;
     padding: 1rem 0;
     width: 20rem;
     margin: auto;
+    margin-block: 0;
 }
 .Charity {
     list-style: none;
@@ -231,6 +230,7 @@ Footer {
     color: #193b1e;
     font-family:Figtree,sans-serif;
     line-height: 3rem;
+    font-style: italic;
 }
 #Div3 a {
     text-decoration: none;
@@ -241,7 +241,7 @@ Footer {
     display: block;
     text-align: center;
     border-radius: 15px;
-    color: #fffceb;
+    color: #e4f0df;
     font-family: 'Indie Flower',cursive;
     box-shadow: -5px 5px 20px #000;
     background-color: #ce4760;
@@ -257,6 +257,7 @@ Footer {
     display: flex;
     padding-inline: 1rem;
     justify-content: space-around;
+    margin-block: .5rem;
 }
 nav {
     background-color: #193b1e;
@@ -272,7 +273,7 @@ nav {
 nav p {
     font-family:'Indie Flower',sans-serif;
     font-size: 2rem;
-    margin: auto;
+    margin: .5rem auto;
     color: #e4f0df;
     text-align: center;
 }
@@ -291,6 +292,32 @@ nav a:hover {
     color: #ce4760;
     text-transform: uppercase;
 }
+#Review {
+    font-family:Figtree,sans-serif;
+    letter-spacing: .05rem;
+    min-height: 48px;
+    min-width: 48px;
+    max-width: 180px;
+}
+#C2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#C2 a {
+    font-size: 2.5rem;
+    font-family:Prata,sans-serif;
+    color:#e4f0df;
+    text-decoration:none;
+}
+#C2 a:hover {
+    transform: scale(1.2);
+    color: #ce4760;
+}
+span {
+    display: flex;
+    justify-content: space-around;
+}
 @media only screen and (max-width:525px) and (Orientation:portrait){
     #Social-Links {
         Display: revert;
@@ -300,6 +327,19 @@ nav a:hover {
     }
     nav a {
         font-size: 1rem;
+    }
+    nav {
+        margin-top: 18rem;
+    }
+}
+@media only screen and (max-width:819px) and (Orientation:portrait){
+    nav {
+        margin-top: 18rem;
+    }
+}
+@media only screen and (max-width:636px) and (Orientation:portrait){
+    nav {
+        margin-top: 21rem;
     }
 }
 @media only screen and (max-width:400px) and (orientation:portrait){
@@ -352,5 +392,8 @@ nav a:hover {
 @media only screen and (max-width:1300px){
     nav a {
         font-size: 1rem;
+        margin: auto 1rem;
+        min-height: 48px;
+        min-width: 48px;
     }
 }
