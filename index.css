@@ -104,32 +104,32 @@ body {
 }
 .Charity {
     list-style: none;
-    padding: 1rem;
-    text-align: center;
-    margin: 1rem auto;
-    background-color: #ce4760;
-    border-radius: 1rem;
-    box-shadow: -8px 8px 16px #000;
-    background-image: url(./images-for-LPgen1/buttonsky.webp);
-    background-size: cover;
-    width: 13rem;
-    background-blend-mode: soft-light;
-    text-shadow: 1px 1px 2px #fffceb;
 }
 .Charity:hover {
     transform: scale(1.2);
 }
 .Charlist {
-    color: #fffceb;
-    text-decoration: none;
-    font-family:Figtree,sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: .15rem;
-    height: 48px;
     display: flex;
     justify-content: center;
     line-height: 1.5rem;
     flex-direction: column;
+    background-color: #ce4760;
+    width: 12rem;
+    height: 4rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    color: #fffceb;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: -8px 8px 16px #000;
+    background-image: url(./images-for-LPgen1/buttonsky.webp);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    font-size: 1.25rem;
+    font-family: Figtree,sans-serif;
+    letter-spacing: .15rem;
+    text-shadow: 1px 1px 2px #fffceb;
 }
 .Shop {
     width: 100%;
