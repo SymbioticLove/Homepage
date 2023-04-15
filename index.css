@@ -322,9 +322,15 @@ span {
     display: flex;
     justify-content: center;
 }
+#Hidden:hover {
+    text-transform: uppercase;
+}
 #Other {
     display: flex;
     justify-content: center;
+}
+#Other:hover {
+    text-transform: uppercase;
 }
 @media only screen and (max-width:525px) and (Orientation:portrait){
     #Social-Links {
