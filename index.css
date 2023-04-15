@@ -318,6 +318,14 @@ span {
     display: flex;
     justify-content: space-around;
 }
+#Hidden {
+    display: flex;
+    justify-content: center;
+}
+#Other {
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (max-width:525px) and (Orientation:portrait){
     #Social-Links {
         Display: revert;
