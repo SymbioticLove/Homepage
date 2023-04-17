@@ -366,7 +366,10 @@ span {
         width: 80%;
         line-height: 2.5rem;
     }
-    #Div2 P {
+    #Div2 p {
+        line-height: 1.5rem;
+    }
+    .E1 p {
         line-height: 1.5rem;
     }
     #Div2 h3 {
