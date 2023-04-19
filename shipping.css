@@ -136,11 +136,18 @@ h4 {
 }
 #Thanks {
     width: 60%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: auto;
     text-align: center;
-    font-family:'Indie Flower',sans-serif;
-    color: #193b1e; 
+    font-family:Prata,sans-serif;
+    color: #193b1e;
+    line-height: 3rem;
+}
+#Thanks a {
+    color: #572cb5;
+}
+#Thanks a:visited {
+    color: #ce4760;
 }
 #Promo {
     width: 75%;
