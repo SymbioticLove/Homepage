@@ -135,7 +135,7 @@ h4 {
     font-weight: bold;
 }
 #Thanks {
-    width: 60%;
+    width: 80%;
     font-size: 1.5rem;
     margin: auto;
     text-align: center;
@@ -233,5 +233,17 @@ footer li {
     .Phone {
         display: flex;
         justify-content: center;
+    }
+}
+@media only screen and (max-width:700px) and (orientation:portrait){
+    #Thanks {
+        line-height: 2rem;
+
+    }
+    #Mission {
+        line-height: 1.75rem;
+    }
+    #Stats {
+        line-height: 1.75rem;
     }
 }
