@@ -96,11 +96,7 @@ body {
     font-size: 1.25rem;
 }
 #Charity {
-    padding-inline-start: 0;
     padding: 1rem 0;
-    width: 20rem;
-    margin: auto;
-    margin-block: 0;
 }
 .Charity {
     list-style: none;
@@ -331,6 +327,12 @@ span {
 }
 #Other:hover {
     text-transform: uppercase;
+}
+#TopLink {
+    color: #572cb5;
+}
+#TopLink:visited {
+    color: #ce4760;
 }
 @media only screen and (max-width:525px) and (Orientation:portrait){
     #Social-Links {
