@@ -183,6 +183,7 @@ footer ul {
     justify-content: center;
     padding-inline: 0;
     padding: 1rem;
+    margin-block-start: 0;
 }
 footer li {
     padding: 0 1rem;
@@ -202,6 +203,17 @@ footer p {
     justify-content: center;
     flex-direction: column;
     padding: 2rem 0;
+}
+#Past {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+    color: #572cb5;
+    font-family:Prata,sans-serif;
+    letter-spacing: .015rem;
+}
+#Past:visited {
+    color: #ce4760;
 }
 @media only screen and (max-width:500px){
     #A {
