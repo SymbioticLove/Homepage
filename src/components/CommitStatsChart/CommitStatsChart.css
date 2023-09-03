@@ -15,3 +15,15 @@
 .update-title.light {
   color: #333;
 }
+
+@media only screen and (max-width: 1200px) {
+  .chart-container tspan {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .chart-container {
+    display: none;
+  }
+}

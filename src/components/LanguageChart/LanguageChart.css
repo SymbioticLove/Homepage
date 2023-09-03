@@ -35,6 +35,7 @@ text,
 tspan {
   font-family: var(--f6);
   font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
 .lines {

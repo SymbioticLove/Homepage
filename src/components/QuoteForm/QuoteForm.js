@@ -137,6 +137,7 @@ const QuoteForm = () => {
               value={numberOfPages}
               onChange={e => setNumberOfPages(e.target.value)}
             >
+              <option value="N/A">N/A</option>
               {Array.from({ length: 20 }, (_, index) => index + 1).map(
                 pages => (
                   <option key={pages} value={pages}>

@@ -68,13 +68,11 @@ function CommitStatsChart({ commitData }) {
 
   return (
     <div className="chart-container">
-      <h2 className={`update-title ${theme}`}>
-        Total Updates in Last 6 Months
-      </h2>
+      <h2 className={`update-title ${theme}`}>Total Updates / 6 Months</h2>
       <ResponsiveContainer width="100%" height={600}>
         <LineChart
           data={chartData}
-          margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+          margin={{ top: 20, right: 30, left: 20, bottom: 15 }}
         >
           <XAxis dataKey="month" textAnchor="end" />
           <YAxis
