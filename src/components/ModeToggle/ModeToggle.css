@@ -1,0 +1,43 @@
+.mode-toggle-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toggle-label {
+  margin: 0 0 0.5rem;
+  font-family: var(--f5);
+  color: var(--gray);
+}
+
+.toggle-switch {
+  width: 70px;
+  height: 30px;
+  background-color: inherit;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid var(--gray);
+}
+
+.toggle-selector {
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.toggle-selector.light {
+  border-right: 1px solid var(--gray);
+}
+
+.toggle-selector.dark {
+  left: calc(100% - 30px);
+  border-left: 1px solid var(--gray);
+}

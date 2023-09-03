@@ -1,0 +1,17 @@
+.thumb {
+  border-radius: 15px;
+}
+
+.thumb:hover {
+  cursor: pointer;
+}
+
+.thumb img {
+  border-radius: 20px;
+}
+
+.carousel-slider {
+  width: 60% !important;
+  margin: auto !important;
+  border-radius: 15px !important;
+}

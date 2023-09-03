@@ -1,0 +1,45 @@
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn100 ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn100 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.total-div {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--gray);
+  font-family: var(--f3);
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  max-width: 325px;
+  line-height: 1.5;
+}
+
+.total-div.light {
+  color: #333;
+}
+
+.inner-upper,
+.inner-lower,
+.lower,
+text,
+tspan {
+  font-family: var(--f6);
+  font-size: 1.2rem;
+}
+
+.lines {
+  stroke: var(#000);
+}
+
+@media (max-width: 767px) {
+}

@@ -1,0 +1,90 @@
+{
+  "header": {
+    "title": "Welcome to Symbiotic Love ❤️️"
+  },
+  "accordion": [
+    { "title": "Brand", "content": "Our lifestyle brand promotes the positive impact that we hope to have on the world and our values of hard work, personal ethics, and individual responsibility. We exemplify these values through responsible and ethical sourcing, manufacturing, and shipping, as well as highly accountable individualized services. To learn more, visit our homepage", "image": "./logo11.svg" },
+    { "title": "Web Services", "content": "We offer a variety of web and programming services. This includes website design, web development, deployment, hositng, DNS setup, maintenance, CI/CD, SEO optimization, WCAG compliance reviews and optimization, custom software programming, webmaster services, and more! If you have any web or technological need, check out our web services page"},
+    { "title": "Shop", "content": "To shop our collection of handmade and secondhand goods, and help support us in our mission, check out our shop. We are proud to have built our shop through our developer partnership with Shopify, enabling us to take almost any form of payment as well as have installment payment options for every service and product on our site, including our web services!*", 
+    "image": [
+      "/bag.jpg",
+      "/esdNeck.jpg",
+      "/leafNeck.jpg",
+      "/mug.jpg",
+      "/pants.jpg",
+      "/seaNeck.jpg",
+      "/pen.jpg",
+      "/set1.jpg", 
+      "/tol1.jpg"
+    ]
+    },
+    { "title": "About", "content": "Our names are Matthew and Jessela. Symbiotic Love began because we were tired of the greedy and irreverent behavior of the businesses in our country. We were, and are, tired of the decline of our ethical and moral standards as a whole, and we wanted to be part of the solution, so we opened a business dedicated to practices that put profits second to our mission. Check out our about page to learn more",
+     "image": [ 
+      "/us1.jpg",
+      "/us2.jpg"
+    ]
+    },
+    {
+      "title": "Contact",
+      "contacts": [
+        {
+          "name": "Support",
+          "email": "support@symbiotic.love"
+        },
+        {
+          "name": "Matthew",
+          "email": "matthew@symbiotic.love"
+        },
+        {
+          "name": "Jessela",
+          "email": "jessela@symbiotic.love"
+        }
+      ],
+      "image": "https://placehold.co/200"
+    }
+  ],
+  "webServices": {
+    "webHero": {
+      "title": "Symbiotic Web Services",
+      "serviceList": [
+        "Web Design",
+        "Web Development",
+        "Web Hosting",
+        "E-Commerce Sites",
+        "DNS Setup",
+        "Logo Design",
+        "Brand Building and Consultation",
+        "Custom Software",
+        "Custom Scripts and CLIs",
+        "Webmaster Services",
+        "Tech Stack Consultations"
+      ],
+      "specialtyList": [
+        "JavaScript",
+        "ReactJS",
+        "Redux",
+        "React Native",
+        "Node.js",
+        "Express.js",
+        "GSAP",
+        "Axios",
+        "Python",
+        "Flask",
+        "Django",
+        "Requests",
+        "BeautifulSoup4",
+        "NLTK",
+        "TensorFlow",
+        "Numpy",
+        "Pandas",
+        "MatPlotLib",
+        "SciKit-Learn",
+        "CSS3",
+        "HTML5"
+      ]
+    }
+  },
+  "footer": {
+    "starText": "*on purchases totaling $50 or more"
+  }
+}

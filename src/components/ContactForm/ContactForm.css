@@ -1,0 +1,121 @@
+.form-container {
+  margin: 15% 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h4 {
+  font-family: var(--f1);
+  font-size: 2.5rem;
+  color: var(--gray);
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  text-shadow: -3px 3px 6px #000;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 7%;
+  font-family: var(--f5);
+  color: var(--gray);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 0 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row label {
+  margin: 3% 0;
+  font-family: var(--f1);
+  color: var(--gray);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-shadow: -2px 2px 4px #000;
+}
+
+.grey {
+  height: 3.5vw;
+  min-height: 50px;
+  width: 25vw;
+  min-width: 250px;
+  padding: 0.5rem;
+  font-family: var(--f5);
+  letter-spacing: 0.15rem;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 8px #000;
+}
+
+.grey.light {
+  background: var(--gray);
+  color: #333;
+}
+
+.grey.dark {
+  background: #333;
+  color: var(--gray);
+}
+
+.comment {
+  height: 20vw;
+  width: 40vw;
+  border: inset #333;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.submit-container button {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  font-family: var(--f5);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  background: inherit;
+  border: 2px outset #333;
+  box-shadow: none;
+  color: var(--gray);
+  box-shadow: 0 0 6px #000;
+}
+
+.submit-container button:hover {
+  cursor: pointer;
+  border: 2px inset #333;
+  transform: scale(0.98);
+  box-shadow: inset 1px 1px 4px #000;
+}
+
+.success-message p {
+  margin-bottom: 0;
+  margin-top: 2rem;
+  font-family: var(--f5);
+  letter-spacing: 0.1rem;
+}
+
+.non-resizable {
+  resize: none;
+  min-height: 200px;
+  min-width: 275px;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-container {
+    margin-top: 5%;
+  }
+}

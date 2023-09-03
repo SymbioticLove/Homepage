@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background-color: #333;
+  user-select: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  --dgreen: #193b1e;
+  --lgreen: #e4f0df;
+  --pink: #ce4760;
+  --accent: #572cb5;
+  --gray: #e4e4e4;
+  --f1: 'Black Ops One', sans-serif;
+  --f2: 'Permanent Marker', sans-serif;
+  --f3: 'Amatic SC', cursive;
+  --f4: 'Handjet', sans-serif;
+  --f5: 'Play', sans-serif;
+  --f6: 'Orbitron', sans-serif;
+}

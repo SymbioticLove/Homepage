@@ -1,0 +1,11 @@
+.footer-container {
+  background: #333;
+  color: var(--gray);
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.footer-container.light {
+  background: var(--gray);
+}

@@ -1,0 +1,139 @@
+.quote-form-container,
+.lphero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent)
+  );
+  animation: gradientAnimation 700s infinite;
+  background-size: 3000% 100%;
+  margin: 0 15%;
+  padding: 3% 0;
+  border-radius: 20px;
+  border: outset #333 2px;
+  box-shadow: 3px 3px 8px #000;
+}
+
+#width {
+  width: 50%;
+}
+
+#underline {
+  border-bottom: 2px solid var(--gray);
+  width: 100%;
+}
+
+.accordion-title {
+  margin: 0;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--f1);
+  color: var(--gray);
+  letter-spacing: 0.2rem;
+  border: none;
+  padding-bottom: 2rem;
+  background: inherit;
+  text-align: left;
+  text-shadow: -2px 2px 4px #000;
+}
+
+.accordion-content {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--gray);
+  font-family: var(--f5);
+  text-align: center;
+}
+
+.accordion-content-4,
+.accordion-content-2,
+.accordion-content-0 {
+  text-align: right;
+}
+
+.accordion-content-3,
+.accordion-content-1 {
+  text-align: left;
+}
+
+.accordion-title:hover {
+  cursor: pointer;
+}
+
+.section-image-0 {
+  border-radius: 50%;
+  height: 200px;
+  text-align: right;
+}
+
+.lptoggle-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.about-images-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-images-container img {
+  margin: 3%;
+  height: 175px;
+  border-radius: 15px;
+}
+
+.about-images-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #000;
+}
+
+.contact-links {
+  color: var(--gray);
+}
+
+@keyframes gradientAnimation {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-form-container,
+  .lphero-container {
+    margin: 0 3%;
+    padding-top: 15%;
+  }
+
+  #width {
+    width: 85%;
+  }
+
+  .accordion-title {
+    font-size: 1.75rem;
+  }
+
+  .about-images-container img {
+    height: 125px;
+  }
+}

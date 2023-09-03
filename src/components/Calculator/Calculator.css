@@ -1,0 +1,62 @@
+.calculator {
+  width: 150px;
+  height: fit-content;
+}
+
+.display {
+  background: var(--gray);
+  height: 75px;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 3px #000;
+  color: var(--dgreen);
+  font-family: var(--f1);
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  overflow-x: scroll;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons button {
+  height: 35px;
+  width: 40px;
+  margin: 0.25rem;
+  border-radius: 5px;
+  border: outset 2px #333;
+  box-shadow: 1px 1px 3px #000;
+  color: var(--gray);
+  background: linear-gradient(
+    45deg,
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent)
+  );
+  animation: gradientAnimation 700s infinite;
+  background-size: 3000% 100%;
+  font-family: var(--f6);
+  font-size: 1.25rem;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  border: inset 2px #333;
+  transform: scale(0.98);
+  box-shadow: inset 1px 1px 3px #000;
+}
