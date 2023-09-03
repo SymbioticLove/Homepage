@@ -12,19 +12,21 @@ import './CommitStatsChart.css';
 import { useTheme } from '../../themes/ThemeContext';
 
 function CommitStatsChart({ commitData }) {
-  // Function to calculate total commits for the last 6 months
+  // Function to calculate total commits for the last 6 months, excluding the current month
   const calculateMonthlyCommits = () => {
     const currentDate = new Date();
+    currentDate.setMonth(currentDate.getMonth() - 1); // Move back one month to exclude the current month
     const last6Months = [];
 
-    // Generate the last 6 months starting from the current month
+    // Generate the last 6 months starting from the previous month
     for (let i = 0; i < 6; i++) {
       const year = currentDate.getFullYear();
-      const month = currentDate.getMonth() - i;
+      const month = currentDate.getMonth();
       last6Months.unshift({
-        year: month < 0 ? year - 1 : year,
-        month: (month + 12) % 12, // Ensure month is in the range 0-11
+        year,
+        month,
       });
+      currentDate.setMonth(currentDate.getMonth() - 1); // Move back one more month
     }
 
     // Initialize monthly commits with zeros
@@ -39,6 +41,10 @@ function CommitStatsChart({ commitData }) {
       const commitDate = new Date(commit.date);
       const commitYear = commitDate.getFullYear();
       const commitMonth = commitDate.getMonth();
+      // Inside the forEach loop that counts commits
+      console.log(
+        `Commit Date: ${commitDate}, Year: ${commitYear}, Month: ${commitMonth}`,
+      );
 
       // Find the corresponding month in monthlyCommits and increment commits
       const monthIndex = last6Months.findIndex(
