@@ -4,15 +4,6 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn100 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .total-div {
   text-align: center;
   font-size: 1.7rem;
@@ -40,6 +31,19 @@ tspan {
 
 .lines {
   stroke: var(#000);
+}
+
+.chart-title {
+  margin-bottom: 10% !important;
+}
+
+@keyframes fadeIn100 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 767px) {

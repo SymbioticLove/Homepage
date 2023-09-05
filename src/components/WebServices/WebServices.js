@@ -3,13 +3,17 @@ import WebHero from '../WebHero/WebHero';
 import ProjectsContainer from '../ProjectsContainer/ProjectsContainer';
 import PropTypes from 'prop-types';
 import QuoteForm from '../QuoteForm/QuoteForm';
-import CommitStatsChart from '../CommitStatsChart/CommitStatsChart';
 
 const WebServices = ({ languageStats, totalBytes, commitData }) => {
   return (
     <div>
-      <WebHero languageStats={languageStats} totalBytes={totalBytes} />
-      <CommitStatsChart commitData={commitData} />
+      <div>
+        <WebHero
+          languageStats={languageStats}
+          totalBytes={totalBytes}
+          commitData={commitData}
+        />
+      </div>
       <QuoteForm />
       <ProjectsContainer />
     </div>

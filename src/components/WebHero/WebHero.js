@@ -4,9 +4,9 @@ import './WebHero.css';
 import LanguageChart from '../LanguageChart/LanguageChart';
 import PropTypes from 'prop-types';
 import { useTheme } from '../../themes/ThemeContext';
-// import Calculator from '../Calculator/Calculator';
+import CommitStatsChart from '../CommitStatsChart/CommitStatsChart';
 
-const WebHero = ({ languageStats, totalBytes }) => {
+const WebHero = ({ languageStats, totalBytes, commitData }) => {
   const webHeroData = useSelector(state => state.about.webServices.webHero);
   const serviceList = webHeroData.serviceList;
   const specialtyList = webHeroData.specialtyList;
@@ -36,14 +36,13 @@ const WebHero = ({ languageStats, totalBytes }) => {
         </div>
       </div>
       <div className={`webHero-frame ${theme}`}>
-        <a
-          href="https://github.com/SymbioticLove"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>Our Code</h2>
-        </a>
-        <LanguageChart languageStats={languageStats} totalBytes={totalBytes} />
+        <div className="chart-row">
+          <LanguageChart
+            languageStats={languageStats}
+            totalBytes={totalBytes}
+          />
+          <CommitStatsChart commitData={commitData} />
+        </div>
       </div>
     </div>
   );
@@ -52,6 +51,7 @@ const WebHero = ({ languageStats, totalBytes }) => {
 WebHero.propTypes = {
   languageStats: PropTypes.array.isRequired,
   totalBytes: PropTypes.number.isRequired,
+  commitData: PropTypes.array.isRequired,
 };
 
 export default WebHero;

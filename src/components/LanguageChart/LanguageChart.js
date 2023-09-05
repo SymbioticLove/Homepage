@@ -118,6 +118,13 @@ const LanguageChart = ({ languageStats, totalBytes }) => {
 
   return (
     <div>
+      <a
+        href="https://github.com/SymbioticLove"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 className="chart-title">Our Code</h2>
+      </a>
       <div className={`fade-in-text total-div ${theme}`}>
         Total Bytes: {totalBytes.toLocaleString()} and counting!
       </div>

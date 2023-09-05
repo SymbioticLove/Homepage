@@ -94,76 +94,146 @@
   },
   "projects": [
     {
-      "title": "Python Web Crawler",
-      "content": "A web crawler CLI made with Python for e-commerce sites using NLP and NER to target and filter keywords at a maximum depth of 3 and a maximum number of 50 pages. /cart, /account, /pay, and other common non-product pages are excluded from the crawl, and the 10 most relevant keywords are displayed."
+      "title": "Web Crawler",
+      "content": "A web crawler CLI made with Python for e-commerce sites using NLP and NER to target and filter keywords at a maximum depth of 3 and a maximum number of 50 pages (modular). /cart, /account, /pay, and other common non-product pages are excluded from the crawl, and the 10 most relevant keywords are displayed.",
+      "logos": [
+        "/pylogo.svg"
+      ]
     },
     {
-      "title": "Python Web Scraper",
-      "content": "A web scraper CLI made with Python, currently set up to scrape a realtor website for listing addresses, realtor name, realtor contact details, and listing date. This data is then placed in a JSON file."
+      "title": "Web Scraper",
+      "content": "A web scraper CLI made with Python, currently set up to scrape a realtor website for listing addresses, realtor name, realtor contact details, and listing date. This data is then placed in a JSON file.",
+      "logos": [
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "Alien Green Seeds",
-      "content": "A ficticious landing page promoting Alien Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy."
+      "content": "A ficticious landing page promoting Alien Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy.",
+      "logos": [
+        "/reactlogo.svg",
+        "/www.png"
+      ]
     },
     {
       "title": "PortfolioPrime",
-      "content": "PortfolioPrime is the beginnings of an SaaS platform intended to offer full portfolio services. This has since been merged into our larger web services offerings."
+      "content": "PortfolioPrime is the beginnings of an SaaS platform intended to offer full portfolio services. This has since been merged into our larger web services offerings.",
+      "logos": [
+        "/reactlogo.svg",
+        "/www.png"
+      ]
     },
     {
       "title": "Remote Signing Services",
-      "content": "Remote Signing Services (RSS) is a client project for mobile notary services in Texas that we are proviidng permanent hosting, updates, and webmaster services for."
+      "content": "Remote Signing Services (RSS) is a client project for mobile notary services in Texas that we are proviidng permanent hosting, updates, and webmaster services for.",
+      "logos": [
+        "/reactlogo.svg",
+        "/www.png"
+      ]
     },
     {
-      "title": "Paypal Flask Integration",
-      "content": "A full PayPal integration (card payments + PayPal) created with Flask."
+      "title": "Paypal Integration",
+      "content": "A full PayPal integration (card payments + PayPal) created with Flask.",
+      "logos": [
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "React Boilerplate",
-      "content": "A standard boilerplate React app."
+      "content": "A standard boilerplate React app.",
+      "logos": [
+        "/reactlogo.svg"
+      ]
     },
     {
       "title": "React/Flask Boilerplate",
-      "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well."
+      "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well.",
+      "logos": [
+        "/reactlogo.svg",
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "Matthew Ford's Portfolio",
-      "content": "Matthew Ford's (our CTO!) portfolio."
+      "content": "Matthew Ford's (our CTO!) portfolio.",
+      "logos": [
+        "/reactlogo.svg",
+        "/www.png"
+      ]
     },
     {
       "title": "AI Author",
-      "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups."
+      "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups. Story history is tracked and stories can be viewed in their entirety in a modal and continued or downloaded in a .txt file.",
+      "logos": [
+        "/reactlogo.svg"
+      ]
     },
     {
       "title": "JSON Parser",
-      "content": "A JSON parser created with JavaScript and released to npm. To install, run 'npm install symbioticlove-json-parser'."
+      "content": "A JSON parser created with Node and JavaScript and released to npm. To install, run 'npm install symbioticlove-json-parser'.",
+      "logos": [
+        "/jslogo.svg"
+      ]
     },
     {
-      "title": "Python WC CLI",
-      "content": "A simple CLI designed to count words, characters, lines, or bytes in a text file or from std input if no file is provided."
+      "title": "WC CLI",
+      "content": "A simple CLI designed to count words, characters, lines, or bytes in a text file or from std input if no file is provided.",
+      "logos": [
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "Recipe Bot",
-      "content": "We are training the ultimate kitchen companion using Python's NLTK."
+      "content": "We are training the ultimate kitchen companion using Python's NLTK.",
+      "logos": [
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "Restaurant POS System",
-      "content": "We are creating a POS system to rival Toast and Square. Our POS tracks employeees, orders, discounts, labor, sales, inventory, and more through a React UI and a Flask REST API writing to JSON files to simulate a DB. There is also a reporting script to calculate and display these numbers for a selected date or date range."
+      "content": "We are creating a POS system to rival Toast and Square. Our POS tracks employeees, orders, discounts, labor, sales, inventory, and more through a React UI and a Flask REST API writing to JSON files to simulate a DB. There is also a reporting script to calculate and display these numbers for a selected date or date range.",
+      "logos": [
+        "/reactlogo.svg",
+        "/pylogo.svg"
+      ]
     },
     {
       "title": "Windows Metric Suite",
-      "content": "A Windows metric suite created with Ruby tracking CPU usage, free and total memory, uptime, disk space, network statistics, and more created with Ruby."
+      "content": "A Windows metric suite created with Ruby tracking CPU usage, free and total memory, uptime, disk space, network statistics, and more.",
+      "logos": [
+        "/rubylogo.png"
+      ]
     },
     {
       "title": "PrimeNative",
-      "content": "PrimeNative is a refactoring of the PortfolioPrime web app into a Native app using React Native. Through the app, users will be able to view services, schedule an appointment, and manage portfolio updates."
+      "content": "PrimeNative is a refactoring of the PortfolioPrime web app into a Native app using React Native. Through the app, users will be able to view services, schedule an appointment, and manage portfolio updates.",
+      "logos": [
+        "/reactlogo.svg",
+        "/app.png"
+      ]
     },
     {
       "title": "Sourcerer Copy",
-      "content": "This React Native app is a copy of the Sourcerer app of old that can analyze GitHub portfolios and visualize the data for potential employers or clientele."
+      "content": "This React Native app is a copy of the Sourcerer app of old that can analyze GitHub portfolios and visualize the data for potential employers or clientele.",
+      "logos": [
+        "/reactlogo.svg",
+        "/app.png"
+      ]
     },
     {
-      "title": "React Weather Widget",
-      "content": "A weather widget created with React and the WeatherAPI tracking daily and weekly average, high, and low temperatures in addition to detailed daily information."
+      "title": "Weather Widget",
+      "content": "A weather widget created with React and the WeatherAPI tracking daily and weekly average, high, and low temperatures in addition to detailed daily information.",
+      "logos": [
+        "/reactlogo.svg"
+      ]
+    },
+    {
+      "title": "Calculators",
+      "content": "Calculators created in both JavaScript and Python. The Python calculator uses a Tkinter GUI while the JavaScript calculator is an open HTML-embeddable script.",
+      "logos": [
+        "/jslogo.svg",
+        "/pylogo.svg"
+      ]
     }
   ],
   "footer": {

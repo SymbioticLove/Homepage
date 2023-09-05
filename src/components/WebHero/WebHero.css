@@ -73,7 +73,7 @@
 }
 
 .webHero-frame h2 {
-  margin: 0 auto;
+  margin: 0 auto 3%;
   font-family: var(--f6);
   font-size: 3rem;
   color: var(--gray);
@@ -82,14 +82,25 @@
   transition: all 0.3s ease;
 }
 
-.webHero-frame.light h2:hover,
-.webHero-frame h2:hover {
+.webHero-frame.light h2:last-child:hover,
+.webHero-frame h2:last-child:hover {
   transform: scale(1.05);
   color: var(--accent);
 }
 
 .webHero-frame.light h2 {
   color: #333;
+}
+
+.chart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.chart-row div:first-child {
+  margin-right: 10%;
 }
 
 @keyframes scroll {
@@ -163,6 +174,9 @@
 @media only screen and (max-width: 1249px) {
   .bar-list {
     animation: scrollWalk2 30s linear infinite;
+  }
+  .chart-row {
+    flex-direction: column;
   }
 }
 
