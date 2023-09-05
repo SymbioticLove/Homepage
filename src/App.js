@@ -37,7 +37,7 @@ function App() {
 
           const commitsOverTime = commits.map(commit => ({
             date: commit.commit.author.date,
-            commits: 1, // You can count commits per day
+            commits: 1,
           }));
 
           commitsData.push(...commitsOverTime);

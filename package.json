@@ -14,6 +14,7 @@
     "emailjs-com": "^3.2.0",
     "eslint": "^8.48.0",
     "prettier": "^3.0.2",
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
@@ -40,12 +41,6 @@
     "lint-and-format": "npm run format && npm run lint:fix",
     "watch-data": "npm run handle-data-change",
     "handle-data-change": "npm run build && rm -rf './src/static/' && mv './src/build/*' './src/'"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

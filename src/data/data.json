@@ -3,26 +3,34 @@
     "title": "Welcome to Symbiotic Love ❤️️"
   },
   "accordion": [
-    { "title": "Brand", "content": "Our lifestyle brand promotes the positive impact that we hope to have on the world and our values of hard work, personal ethics, and individual responsibility. We exemplify these values through responsible and ethical sourcing, manufacturing, and shipping, as well as highly accountable individualized services. To learn more, visit our homepage", "image": "./logo11.svg" },
-    { "title": "Web Services", "content": "We offer a variety of web and programming services. This includes website design, web development, deployment, hositng, DNS setup, maintenance, CI/CD, SEO optimization, WCAG compliance reviews and optimization, custom software programming, webmaster services, and more! If you have any web or technological need, check out our web services page"},
-    { "title": "Shop", "content": "To shop our collection of handmade and secondhand goods, and help support us in our mission, check out our shop. We are proud to have built our shop through our developer partnership with Shopify, enabling us to take almost any form of payment as well as have installment payment options for every service and product on our site, including our web services!*", 
-    "image": [
-      "/bag.jpg",
-      "/esdNeck.jpg",
-      "/leafNeck.jpg",
-      "/mug.jpg",
-      "/pants.jpg",
-      "/seaNeck.jpg",
-      "/pen.jpg",
-      "/set1.jpg", 
-      "/tol1.jpg"
-    ]
+    {
+      "title": "Brand",
+      "content": "Our lifestyle brand promotes the positive impact that we hope to have on the world and our values of hard work, personal ethics, and individual responsibility. We exemplify these values through responsible and ethical sourcing, manufacturing, and shipping, as well as highly accountable individualized services. To learn more, visit our homepage",
+      "image": "./logo11.svg"
     },
-    { "title": "About", "content": "Our names are Matthew and Jessela. Symbiotic Love began because we were tired of the greedy and irreverent behavior of the businesses in our country. We were, and are, tired of the decline of our ethical and moral standards as a whole, and we wanted to be part of the solution, so we opened a business dedicated to practices that put profits second to our mission. Check out our about page to learn more",
-     "image": [ 
-      "/us1.jpg",
-      "/us2.jpg"
-    ]
+    {
+      "title": "Web Services",
+      "content": "We offer a variety of web and programming services. This includes website design, web development, deployment, hositng, DNS setup, maintenance, CI/CD, SEO optimization, WCAG compliance reviews and optimization, custom software programming, webmaster services, and more! If you have any web or technological need, check out our web services page"
+    },
+    {
+      "title": "Shop",
+      "content": "To shop our collection of handmade and secondhand goods, and help support us in our mission, check out our shop. We are proud to have built our shop through our developer partnership with Shopify, enabling us to take almost any form of payment as well as have installment payment options for every service and product on our site, including our web services!*",
+      "image": [
+        "/bag.jpg",
+        "/esdNeck.jpg",
+        "/leafNeck.jpg",
+        "/mug.jpg",
+        "/pants.jpg",
+        "/seaNeck.jpg",
+        "/pen.jpg",
+        "/set1.jpg",
+        "/tol1.jpg"
+      ]
+    },
+    {
+      "title": "About",
+      "content": "Our names are Matthew and Jessela. Symbiotic Love began because we were tired of the greedy and irreverent behavior of the businesses in our country. We were, and are, tired of the decline of our ethical and moral standards as a whole, and we wanted to be part of the solution, so we opened a business dedicated to practices that put profits second to our mission. Check out our about page to learn more",
+      "image": ["/us1.jpg", "/us2.jpg"]
     },
     {
       "title": "Contact",
@@ -84,6 +92,80 @@
       ]
     }
   },
+  "projects": [
+    {
+      "title": "Python Web Crawler",
+      "content": "A web crawler CLI made with Python for e-commerce sites using NLP and NER to target and filter keywords at a maximum depth of 3 and a maximum number of 50 pages. /cart, /account, /pay, and other common non-product pages are excluded from the crawl, and the 10 most relevant keywords are displayed."
+    },
+    {
+      "title": "Python Web Scraper",
+      "content": "A web scraper CLI made with Python, currently set up to scrape a realtor website for listing addresses, realtor name, realtor contact details, and listing date. This data is then placed in a JSON file."
+    },
+    {
+      "title": "Alien Green Seeds",
+      "content": "A ficticious landing page promoting Alien Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy."
+    },
+    {
+      "title": "PortfolioPrime",
+      "content": "PortfolioPrime is the beginnings of an SaaS platform intended to offer full portfolio services. This has since been merged into our larger web services offerings."
+    },
+    {
+      "title": "Remote Signing Services",
+      "content": "Remote Signing Services (RSS) is a client project for mobile notary services in Texas that we are proviidng permanent hosting, updates, and webmaster services for."
+    },
+    {
+      "title": "Paypal Flask Integration",
+      "content": "A full PayPal integration (card payments + PayPal) created with Flask."
+    },
+    {
+      "title": "React Boilerplate",
+      "content": "A standard boilerplate React app."
+    },
+    {
+      "title": "React/Flask Boilerplate",
+      "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well."
+    },
+    {
+      "title": "Matthew Ford's Portfolio",
+      "content": "Matthew Ford's (our CTO!) portfolio."
+    },
+    {
+      "title": "AI Author",
+      "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups."
+    },
+    {
+      "title": "JSON Parser",
+      "content": "A JSON parser created with JavaScript and released to npm. To install, run 'npm install symbioticlove-json-parser'."
+    },
+    {
+      "title": "Python WC CLI",
+      "content": "A simple CLI designed to count words, characters, lines, or bytes in a text file or from std input if no file is provided."
+    },
+    {
+      "title": "Recipe Bot",
+      "content": "We are training the ultimate kitchen companion using Python's NLTK."
+    },
+    {
+      "title": "Restaurant POS System",
+      "content": "We are creating a POS system to rival Toast and Square. Our POS tracks employeees, orders, discounts, labor, sales, inventory, and more through a React UI and a Flask REST API writing to JSON files to simulate a DB. There is also a reporting script to calculate and display these numbers for a selected date or date range."
+    },
+    {
+      "title": "Windows Metric Suite",
+      "content": "A Windows metric suite created with Ruby tracking CPU usage, free and total memory, uptime, disk space, network statistics, and more created with Ruby."
+    },
+    {
+      "title": "PrimeNative",
+      "content": "PrimeNative is a refactoring of the PortfolioPrime web app into a Native app using React Native. Through the app, users will be able to view services, schedule an appointment, and manage portfolio updates."
+    },
+    {
+      "title": "Sourcerer Copy",
+      "content": "This React Native app is a copy of the Sourcerer app of old that can analyze GitHub portfolios and visualize the data for potential employers or clientele."
+    },
+    {
+      "title": "React Weather Widget",
+      "content": "A weather widget created with React and the WeatherAPI tracking daily and weekly average, high, and low temperatures in addition to detailed daily information."
+    }
+  ],
   "footer": {
     "starText": "*on purchases totaling $50 or more"
   }
