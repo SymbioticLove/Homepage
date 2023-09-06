@@ -69,26 +69,31 @@ const ProjectsContainer = () => {
           expandedProject === project.title ? 'expanded' : ''
         }`}
       >
-        {project.images &&
-          project.images.length > 0 &&
-          // Check if it's one of the specific projects
-          (project.title === 'Galactic Greenery' ||
-          project.title === 'Remote Signing Services' ||
-          project.title === "Matthew Ford's Portfolio" ? (
-            <iframe src={project.images[0]} title={project.title} />
-          ) : (
+        <div className="text-and-image">
+          {project.images && project.images.length > 0 && (
             // Render an image and the <h5> element
-            <>
-              <h5>Click Image to Enlarge</h5>
+            <div className="img-and-enlarge">
+              <h5>Click/Tap Image to Enlarge + See More</h5>
               <img
                 src={project.images[0]} // Display the first image as the initial image
                 alt={project.title}
                 onClick={() => setIsModalOpen(true)}
               />
-            </>
-          ))}
-        <p>{project.content}</p>
-        <a href={project.link}>Visit Repository</a>
+            </div>
+          )}
+          <p>{project.content}</p>
+        </div>
+        {[
+          'Galactic Greenery',
+          'Remote Signing Services',
+          "Matthew Ford's Portfolio",
+        ].includes(project.title) ? (
+          <button onClick={() => (window.location.href = project.link)}>
+            Visit Site
+          </button>
+        ) : (
+          <a href={project.link}>Visit Repository</a>
+        )}
       </div>
     </div>
   );

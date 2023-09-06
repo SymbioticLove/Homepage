@@ -116,9 +116,11 @@
     },
     {
       "title": "Galactic Greenery",
-      "content": "A ficticious landing page promoting Galactic Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy.",
+      "content": "A silly and fun landing page promoting Galactic Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy.",
       "images": [
-        "https://symbioticlove.github.io/Built-Demo-Product-Page/"
+        "/gg1.png",
+        "/gg2.png",
+        "/gg3.png"
       ],
       "logos": [
         "/reactlogo.svg",
@@ -129,7 +131,8 @@
       "title": "Remote Signing Services",
       "content": "Remote Signing Services (RSS) is a client project for mobile notary services in Texas that we are proviidng permanent hosting, updates, and webmaster services for.",
       "images": [
-        "http://remotesigningservices.com"
+        "/rss1.png",
+        "/rss2.png"
       ],
       "logos": [
         "/reactlogo.svg",
@@ -138,7 +141,13 @@
     },
     {
       "title": "Paypal Integration",
-      "content": "A full PayPal integration (card payments + PayPal) created with Flask.",
+      "content": "A full PayPal integration (card payments + PayPal) created with Flask and JavaScript using an HTML template to render form fields.",
+      "images": [
+        "/pp1.png",
+        "/pp2.png",
+        "/pp3.png",
+        "/pp4.png"
+      ],
       "logos": [
         "/pylogo.svg",
         "/jslogo.svg"
@@ -146,14 +155,20 @@
     },
     {
       "title": "React Boilerplate",
-      "content": "A standard boilerplate React app.",
+      "content": "A standard boilerplate React app, set up with a :root in the index.css and shortcuts for easy setup. This type of website is perfect for landing pages, portfolios, business sites, and other projects that do not require a server component.",
+      "images": [
+        "/react-template.png"
+      ],
       "logos": [
         "/reactlogo.svg"
       ]
     },
     {
       "title": "React/Flask Boilerplate",
-      "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well.",
+      "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well. Perfect for more complex web applications that require a server component.",
+      "images": [
+        "/react-flask.png"
+      ],
       "logos": [
         "/reactlogo.svg",
         "/pylogo.svg"
@@ -161,9 +176,12 @@
     },
     {
       "title": "Matthew Ford's Portfolio",
-      "content": "Matthew Ford's (our CTO!) portfolio.",
+      "content": "Our CTO and chief engineer's portfolio website showcasing a variety of tehnical skills and certifications.",
       "images": [
-        "https://symbioticlove.github.io/Portfolio/"
+        "/folio1.png",
+        "/folio2.png",
+        "/folio3.png",
+        "/folio4.png"
       ],
       "logos": [
         "/reactlogo.svg",
@@ -172,14 +190,25 @@
     },
     {
       "title": "AI Author",
-      "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups. Story history is tracked and stories can be viewed in their entirety in a modal and continued or downloaded in a .txt file.",
+      "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups. Story history is tracked and stories can be viewed in their entirety in a modal and continued or downloaded in a .txt file. You can easily plug in your own API key and use this yourself!",
+      "images": [
+        "/author1.png",
+        "/author2.png",
+        "/author3.png",
+        "/author4.png",
+        "/author5.png"
+      ],
       "logos": [
         "/reactlogo.svg"
       ]
     },
     {
       "title": "JSON Parser",
-      "content": "A JSON parser created with Node and JavaScript and released to npm. To install, run 'npm install symbioticlove-json-parser'.",
+      "content": "A JSON parser created with Node and JavaScript and released to npm, with 100% accuracy on a diverse set of test data. To install, run 'npm install symbioticlove-json-parser'.",
+      "images": [
+        "/parser1.png",
+        "/parser2.png"
+      ],
       "logos": [
         "/jslogo.svg"
       ]
@@ -187,6 +216,11 @@
     {
       "title": "WC CLI",
       "content": "A simple CLI designed to count words, characters, lines, or bytes in a text file or from std input if no file is provided.",
+      "images": [
+        "/wc1.png",
+        "/wc2.png",
+        "/wc3.png"
+      ],
       "logos": [
         "/pylogo.svg"
       ]
@@ -194,6 +228,14 @@
     {
       "title": "Recipe Bot",
       "content": "We are training the ultimate kitchen companion using Python's NLTK.",
+      "images": [
+        "/ai2.png",
+        "/ai1.png",
+        "/ai3.png",
+        "/ai4.png",
+        "/ai5.png",
+        "/ai6.png"
+      ],
       "logos": [
         "/pylogo.svg"
       ]
