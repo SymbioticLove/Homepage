@@ -88,11 +88,13 @@ const ProjectsContainer = () => {
           'Remote Signing Services',
           "Matthew Ford's Portfolio",
         ].includes(project.title) ? (
-          <button onClick={() => (window.location.href = project.link)}>
-            Visit Site
-          </button>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <button>Visit Website</button>
+          </a>
         ) : (
-          <a href={project.link}>Visit Repository</a>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <button>Visit Repository</button>
+          </a>
         )}
       </div>
     </div>

@@ -5,16 +5,16 @@
   "accordion": [
     {
       "title": "Brand",
-      "content": "Our lifestyle brand promotes the positive impact that we hope to have on the world and our values of hard work, personal ethics, and individual responsibility. We exemplify these values through responsible and ethical sourcing, manufacturing, and shipping, as well as highly accountable individualized services. To learn more, visit our homepage",
+      "content": "Our lifestyle brand promotes the positive impact that we hope to have on the world and our values of hard work, personal ethics, and individual responsibility. We exemplify these values through responsible and ethical sourcing, manufacturing, and shipping, as well as highly accountable individualized services. To learn more, visit our Lifestyle page",
       "image": "./logo11.svg"
     },
     {
       "title": "Web Services",
-      "content": "We offer a variety of web and programming services. This includes website design, web development, deployment, hositng, DNS setup, maintenance, CI/CD, SEO optimization, WCAG compliance reviews and optimization, custom software programming, webmaster services, and more! If you have any web or technological need, check out our web services page"
+      "content": "We offer a variety of web and programming services. This includes website design, web development, deployment, hositng, DNS setup, maintenance, CI/CD, SEO optimization, WCAG compliance reviews and optimization, custom software programming, webmaster services, and more! If you have any web or technological need, check out our Web Services page"
     },
     {
       "title": "Shop",
-      "content": "To shop our collection of handmade and secondhand goods, and help support us in our mission, check out our shop. We are proud to have built our shop through our developer partnership with Shopify, enabling us to take almost any form of payment as well as have installment payment options for every service and product on our site, including our web services!*",
+      "content": "To shop our collection of handmade and secondhand goods, and help support us in our mission, check out our shop. We are proud to have built our shop through our developer partnership with Shopify, enabling us to take almost any form of payment as well as have installment payment options for every service and product on our site, including our web services!",
       "image": [
         "/bag.jpg",
         "/esdNeck.jpg",
@@ -96,6 +96,7 @@
     {
       "title": "Web Crawler",
       "content": "A web crawler CLI made with Python for e-commerce sites using NLP and NER to target and filter keywords at a maximum depth of 3 and a maximum number of 50 pages (modular). /cart, /account, /pay, and other common non-product pages are excluded from the crawl, and the 10 most relevant keywords are displayed.",
+      "link": "https://github.com/SymbioticLove/Python-Crawler",
       "images": [
          "/crawler.png"
         ],
@@ -106,6 +107,7 @@
     {
       "title": "Web Scraper",
       "content": "A web scraping program made with Python, currently set up to scrape realtor website bookmarks for listing addresses, realtor name, realtor contact details, and provide a date stamp. After being scraped, bookmarks are moved to a 'scraped' file to prevent multiple scrapes of the same page and the data is saved to a JSON file.",
+      "link": "https://github.com/SymbioticLove/Python-Web-Scraper",
       "images": [
         "/scraper1.png",
         "/scraper2.png"
@@ -117,6 +119,7 @@
     {
       "title": "Galactic Greenery",
       "content": "A silly and fun landing page promoting Galactic Green Seeds; seeds to grow alien plantlife. This page showcases some keyframe animation effects as well as strong contrast and typographical heirarchy.",
+      "link": "https://symbioticlove.github.io/Built-Demo-Product-Page/",
       "images": [
         "/gg1.png",
         "/gg2.png",
@@ -130,6 +133,7 @@
     {
       "title": "Remote Signing Services",
       "content": "Remote Signing Services (RSS) is a client project for mobile notary services in Texas that we are proviidng permanent hosting, updates, and webmaster services for.",
+      "link": "http://remotesigningservices.com",
       "images": [
         "/rss1.png",
         "/rss2.png"
@@ -141,7 +145,8 @@
     },
     {
       "title": "Paypal Integration",
-      "content": "A full PayPal integration (card payments + PayPal) created with Flask and JavaScript using an HTML template to render form fields.",
+      "content": "A full PayPal integration (card payments + PayPal) created with Flask and JavaScript using an HTML template to render form fields. PayPal uses a highly secure multi-token authentication process.",
+      "link": "https://github.com/SymbioticLove/PayPal-adv-integration/blob/main/app.py",
       "images": [
         "/pp1.png",
         "/pp2.png",
@@ -156,6 +161,7 @@
     {
       "title": "React Boilerplate",
       "content": "A standard boilerplate React app, set up with a :root in the index.css and shortcuts for easy setup. This type of website is perfect for landing pages, portfolios, business sites, and other projects that do not require a server component.",
+      "link": "https://github.com/SymbioticLove/Create-React-App",
       "images": [
         "/react-template.png"
       ],
@@ -166,6 +172,7 @@
     {
       "title": "React/Flask Boilerplate",
       "content": "Similar to our React app boilerplate, but with a Flask server proxied and connected as well. Perfect for more complex web applications that require a server component.",
+      "link": "https://github.com/SymbioticLove/React-Flask-Boilerplate",
       "images": [
         "/react-flask.png"
       ],
@@ -177,6 +184,7 @@
     {
       "title": "Matthew Ford's Portfolio",
       "content": "Our CTO and chief engineer's portfolio website showcasing a variety of tehnical skills and certifications.",
+      "link": "https://symbioticlove.github.io/Portfolio/",
       "images": [
         "/folio1.png",
         "/folio2.png",
@@ -191,6 +199,7 @@
     {
       "title": "AI Author",
       "content": "A simple UI for writing short stories using GPTs API in a variety of different author styles and for a variety of different age groups. Story history is tracked and stories can be viewed in their entirety in a modal and continued or downloaded in a .txt file. You can easily plug in your own API key and use this yourself!",
+      "link": "https://github.com/SymbioticLove/InterviewDemo/blob/main/src/App.js",
       "images": [
         "/author1.png",
         "/author2.png",
@@ -205,6 +214,7 @@
     {
       "title": "JSON Parser",
       "content": "A JSON parser created with Node and JavaScript and released to npm, with 100% accuracy on a diverse set of test data. To install, run 'npm install symbioticlove-json-parser'.",
+      "link": "https://github.com/SymbioticLove/JSON-Parser",
       "images": [
         "/parser1.png",
         "/parser2.png"
@@ -216,6 +226,7 @@
     {
       "title": "WC CLI",
       "content": "A simple CLI designed to count words, characters, lines, or bytes in a text file or from std input if no file is provided.",
+      "link": "https://github.com/SymbioticLove/Python-wc-Tool",
       "images": [
         "/wc1.png",
         "/wc2.png",
@@ -227,7 +238,8 @@
     },
     {
       "title": "Recipe Bot",
-      "content": "We are training the ultimate kitchen companion using Python's NLTK.",
+      "content": "We are training the ultimate kitchen companion using Python's NLTK. Currently, the training script remains non-ideal, but is being worked on.",
+      "link": "https://github.com/SymbioticLove/Recipe-Bot-Training",
       "images": [
         "/ai2.png",
         "/ai1.png",
@@ -242,7 +254,23 @@
     },
     {
       "title": "Restaurant POS System",
-      "content": "We are creating a POS system to rival Toast and Square. Our POS tracks employeees, orders, discounts, labor, sales, inventory, and more through a React UI and a Flask REST API writing to JSON files to simulate a DB. There is also a reporting script to calculate and display these numbers for a selected date or date range.",
+      "content": "We are creating a POS system to rival Toast and Square. Our POS tracks employeees, orders, discounts, labor, sales, inventory, and more through a React UI and a Flask REST API writing to JSON files to simulate a DB while being fully customizable to the needs and aesthetic of the business. There is also a reporting script to calculate and display these numbers for a selected date or date range.",
+      "link": "https://github.com/SymbioticLove/Restaurant-POS-System",
+      "images": [
+        "/pos1.png",
+        "/pos2.png",
+        "/pos3.png",
+        "/pos4.png",
+        "/pos5.png",
+        "/pos6.png",
+        "/pos7.png",
+        "/pos8.png",
+        "/pos9.png",
+        "/pos10.png",
+        "/pos11.png",
+        "/pos12.png",
+        "/pos13.png"
+      ],
       "logos": [
         "/reactlogo.svg",
         "/pylogo.svg"
@@ -251,6 +279,11 @@
     {
       "title": "Windows Metric Suite",
       "content": "A Windows metric suite created with Ruby tracking CPU usage, free and total memory, uptime, disk space, network statistics, and more.",
+      "link": "https://github.com/SymbioticLove/Ruby-WinMetricSuite",
+      "images": [
+        "/metrics1.png",
+        "/metrics2.png"
+      ],
       "logos": [
         "/rubylogo.png"
       ]
@@ -258,6 +291,10 @@
     {
       "title": "PrimeNative",
       "content": "PrimeNative is a refactoring of the PortfolioPrime web app into a Native app using React Native. Through the app, users will be able to view services, schedule an appointment, and manage portfolio updates.",
+      "link": "https://github.com/SymbioticLove/PrimeNative/tree/main/PortfolioPrimeApp",
+      "images": [
+        "/prime1.png"
+      ],
       "logos": [
         "/reactlogo.svg",
         "/app.png"
@@ -266,21 +303,24 @@
     {
       "title": "Sourcerer Copy",
       "content": "This React Native app is a copy of the Sourcerer app of old that can analyze GitHub portfolios and visualize the data for potential employers or clientele.",
+      "link": "https://github.com/SymbioticLove/Sourcerer-copy/tree/main/NATIVE/dl-native",
+      "images": [
+        "/source1.png",
+        "/source2.png"
+      ],
       "logos": [
         "/reactlogo.svg",
         "/app.png"
       ]
     },
     {
-      "title": "Weather Widget",
-      "content": "A weather widget created with React and the WeatherAPI tracking daily and weekly average, high, and low temperatures in addition to detailed daily information.",
-      "logos": [
-        "/reactlogo.svg"
-      ]
-    },
-    {
       "title": "Calculators",
       "content": "Calculators created in both JavaScript and Python. The Python calculator uses a Tkinter GUI while the JavaScript calculator is an open HTML-embeddable script.",
+      "link": "https://github.com/SymbioticLove/JsCalculator",
+      "images": [
+        "/calc1.png",
+        "/calc2.png"
+      ],
       "logos": [
         "/jslogo.svg",
         "/pylogo.svg"
@@ -288,6 +328,6 @@
     }
   ],
   "footer": {
-    "starText": "*on purchases totaling $50 or more"
+    "starText": "Symbiotic.love is still in an early phase of rebuilding! Check back daily, and if you have any suggestions, please send them to feedback@symbiotic.love!"
   }
 }

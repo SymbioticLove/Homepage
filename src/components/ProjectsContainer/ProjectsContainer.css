@@ -28,7 +28,7 @@
 }
 
 .project-column {
-  width: 75%;
+  width: 80%;
   margin: 3%;
 }
 
@@ -43,34 +43,33 @@
 }
 
 .project-content.expanded {
-  max-height: 400px;
-}
-
-.project-content iframe {
-  width: 70%;
-  min-height: 400px;
-  max-height: 500px;
-  border: none;
-  border-radius: 15px;
+  max-height: 700px;
 }
 
 .project-content img {
-  height: 200px;
+  height: 300px;
   border-radius: 15px;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.project-content img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .project-content h5 {
   font-family: var(--f4);
-  margin: 0.5rem 0 0;
+  margin: 0.5rem 0;
   letter-spacing: 0.15rem;
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
 }
 
-.project-content img:hover {
-  cursor: pointer;
+.projects-container.light h5 {
+  font-weight: bold;
 }
 
 .project-title-container {
@@ -121,15 +120,44 @@
 }
 
 .project-content a {
-  font-family: var(--f1);
-  font-size: 1.1rem;
-  transition: all 0.2s ease;
-  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: var(--gray);
 }
 
-.project-content a:hover {
+.project-content button {
+  font-family: var(--f6);
+  color: var(--gray);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  letter-spacing: 0.15rem;
+  background: linear-gradient(
+    45deg,
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent)
+  );
+  animation: gradientAnimation 700s infinite;
+  background-size: 3000% 100%;
+  padding: 1rem;
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-content button:hover {
   cursor: pointer;
-  color: var(--pink);
+  transform: scale(1.03);
+  background-color: rgba(51, 51, 51, 0.4);
+  background-blend-mode: overlay;
 }
 
 .caret-icon2 {
@@ -172,7 +200,7 @@
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1550px) {
   .text-and-image {
     flex-direction: column;
   }
