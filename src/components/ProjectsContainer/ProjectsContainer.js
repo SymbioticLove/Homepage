@@ -8,29 +8,41 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 const ProjectsContainer = () => {
   const projectsData = useSelector(state => state.about.projects);
   const { theme } = useTheme(); // Call the useTheme hook to get the theme
-  const link = 'https://placehold.co/800x400';
 
   // Define a state variable to track the currently expanded project
   const [expandedProject, setExpandedProject] = useState(null);
 
+  // Define state variables for the modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImages, setSelectedImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   // Define a function to handle click events on project titles
   const handleProjectClick = project => {
-    // Toggle the expanded state of the clicked project
     if (expandedProject === project.title) {
-      setExpandedProject(null); // Collapse the project if it's already expanded
+      setExpandedProject(null);
+      setSelectedImages([]); // Clear selected images
     } else {
-      setExpandedProject(project.title); // Expand the project
+      setExpandedProject(project.title);
+      if (project.images && project.images.length > 0) {
+        setSelectedImages(project.images);
+        setCurrentImageIndex(0); // Start with the first image
+      }
     }
   };
 
-  // Define a function to render a single project section
+  // Define a function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // Render a single project section
   const renderProjectSection = project => (
     <div className={`project-section ${theme}`} key={project.title}>
       <div
         className="project-title-container"
         onClick={() => handleProjectClick(project)}
       >
-        {/* Map over project logos and render images */}
         {project.logos &&
           project.logos.map((logo, index) => (
             <img src={logo} alt={`Logo ${index}`} key={`logo-${index}`} />
@@ -57,7 +69,24 @@ const ProjectsContainer = () => {
           expandedProject === project.title ? 'expanded' : ''
         }`}
       >
-        <img src={link} alt={project.title} />
+        {project.images &&
+          project.images.length > 0 &&
+          // Check if it's one of the specific projects
+          (project.title === 'Galactic Greenery' ||
+          project.title === 'Remote Signing Services' ||
+          project.title === "Matthew Ford's Portfolio" ? (
+            <iframe src={project.images[0]} title={project.title} />
+          ) : (
+            // Render an image and the <h5> element
+            <>
+              <h5>Click Image to Enlarge</h5>
+              <img
+                src={project.images[0]} // Display the first image as the initial image
+                alt={project.title}
+                onClick={() => setIsModalOpen(true)}
+              />
+            </>
+          ))}
         <p>{project.content}</p>
         <a href={project.link}>Visit Repository</a>
       </div>
@@ -76,6 +105,44 @@ const ProjectsContainer = () => {
           ))}
         </div>
       </div>
+
+      {/* Modal for carousel images */}
+      {isModalOpen && (
+        <div className="modal">
+          <img src={selectedImages[currentImageIndex]} alt="Modal" />
+
+          {/* Display navigation buttons for the carousel only when there are multiple images */}
+          {selectedImages.length > 1 ? (
+            <div className="carousel-nav">
+              <button
+                onClick={() =>
+                  setCurrentImageIndex(
+                    (currentImageIndex - 1 + selectedImages.length) %
+                      selectedImages.length,
+                  )
+                }
+              >
+                Previous
+              </button>
+              <button
+                onClick={() =>
+                  setCurrentImageIndex(
+                    (currentImageIndex + 1) % selectedImages.length,
+                  )
+                }
+              >
+                Next
+              </button>
+              <button onClick={closeModal}>Close</button>
+            </div>
+          ) : (
+            // Only "Close" button when there's only one image
+            <div className="carousel-nav">
+              <button onClick={closeModal}>Close</button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
