@@ -75,12 +75,12 @@
 .project-title-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0.5rem auto;
   padding: 0.5rem;
   font-family: var(--f3);
   font-size: 2rem;
   letter-spacing: 0.25rem;
-  width: fit-content;
   transition: all 0.2s ease;
 }
 
@@ -104,6 +104,7 @@
   letter-spacing: 0.5rem;
   color: var(--gray);
   font-size: 3rem;
+  padding: 0 0.5rem;
 }
 
 .projects-wrapper h3 {
@@ -126,6 +127,7 @@
   color: var(--gray);
 }
 
+.full-repo-link button,
 .project-content button {
   font-family: var(--f6);
   color: var(--gray);
@@ -155,6 +157,7 @@
   margin-bottom: 1rem;
 }
 
+.full-repo-link button:hover,
 .project-content button:hover {
   cursor: pointer;
   transform: scale(1.03);
@@ -188,10 +191,29 @@
 }
 
 .modal button {
-  background: transparent;
-  border: none;
+  background: linear-gradient(
+    45deg,
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent)
+  );
+  animation: gradientAnimation 700s infinite;
+  background-size: 3000% 100%;
+  border: 2px solid var(--gray);
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 0.5rem;
   color: var(--gray);
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.15rem;
   margin: 1rem;
   font-family: var(--f5);
@@ -200,6 +222,33 @@
 
 .modal button:hover {
   transform: scale(1.1);
+}
+
+.carousel-nav {
+  display: flex;
+}
+
+.full-repo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--gray);
+}
+
+.full-repo-link.light {
+  color: #333;
+}
+
+.full-repo-link h5 {
+  font-family: var(--f6);
+  font-size: 1.5rem;
+  line-height: 1.7;
+  letter-spacing: 0.25rem;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+  width: 40%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -220,7 +269,25 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .projects-wrapper h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-title-container {
+    font-size: 1.5rem;
+    letter-spacing: revert;
+    text-align: center;
+  }
+
   .project-content p {
     font-size: 1rem;
+  }
+
+  .outer-project-column {
+    width: 100%;
+  }
+
+  .full-repo-link h5 {
+    width: 80%;
   }
 }

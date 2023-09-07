@@ -80,6 +80,7 @@
   letter-spacing: 0.5rem;
   animation: webBanFade 2s ease;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .webHero-frame.light h2:last-child:hover,
@@ -175,8 +176,13 @@
   .bar-list {
     animation: scrollWalk2 30s linear infinite;
   }
+
   .chart-row {
     flex-direction: column;
+  }
+
+  .chart-row div:first-child {
+    margin-right: 0;
   }
 }
 

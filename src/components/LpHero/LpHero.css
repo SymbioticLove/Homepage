@@ -122,7 +122,11 @@
   .quote-form-container,
   .lphero-container {
     margin: 0 3%;
-    padding-top: 15%;
+    padding-top: 20%;
+  }
+
+  .quote-form-container {
+    padding-top: 30%;
   }
 
   #width {

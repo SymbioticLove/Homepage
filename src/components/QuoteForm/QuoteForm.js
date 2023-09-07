@@ -190,7 +190,7 @@ const QuoteForm = () => {
         <div className="quote-form-row details-row">
           <label htmlFor="details">Details</label>
           <textarea
-            className={`quote-grey ${theme} quote-non-resizable details`}
+            className={`quote-grey ${theme} non-resizable details`}
             name="details"
             value={details}
             onChange={e => setDetails(e.target.value)}

@@ -3,16 +3,27 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import Navigation from './components/Navigation/Navigation';
 import { ThemeProvider } from './themes/ThemeContext';
 import WebServices from './components/WebServices/WebServices';
 import Footer from './components/Footer/Footer';
 import LpHero from './components/LpHero/LpHero';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
   const [languageStats, setLanguageStats] = useState([]);
   const [totalBytes, setTotalBytes] = useState(0);
   const [commitData, setCommitData] = useState([]);
+  const [loadingCommitData, setLoadingCommitData] = useState(true);
+  const [loadingLanguageStats, setLoadingLanguageStats] = useState(true);
+  const [loading, setLoading] = useState(true);
+
+  // Function to set loading to false after 15 seconds
+  const setLoadingFalseAfterTimeout = () => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 15000);
+  };
 
   useEffect(() => {
     const fetchCommitData = async () => {
@@ -44,8 +55,10 @@ function App() {
         }
 
         setCommitData(commitsData);
+        setLoadingCommitData(false); // Set loadingCommitData to false
       } catch (error) {
         console.error('Error fetching commit data:', error);
+        setLoadingCommitData(false); // Set loadingCommitData to false on error
       }
     };
 
@@ -84,35 +97,55 @@ function App() {
 
         setTotalBytes(bytesTotal);
         setLanguageStats(filteredStats);
+        setLoadingLanguageStats(false); // Set loadingLanguageStats to false
       } catch (error) {
         console.error('Error fetching data:', error);
+        setLoadingLanguageStats(false); // Set loadingLanguageStats to false on error
       }
     };
 
     fetchLanguageStats();
   }, []);
 
+  // Check if both loading states are false, and set loading to false accordingly
+  useEffect(() => {
+    if (!loadingCommitData && !loadingLanguageStats) {
+      setLoading(false);
+    }
+  }, [loadingCommitData, loadingLanguageStats]);
+
+  // Set loading to false after 15 seconds
+  useEffect(() => {
+    setLoadingFalseAfterTimeout();
+  }, []);
+
   return (
     <ThemeProvider>
       <Provider store={store}>
         <Router>
-          <Navigation />
-          <Routes>
-            <Route path="/" element={<LpHero />} />
-            <Route path="/Lifestyle" />
-            <Route
-              path="/Web"
-              element={
-                <WebServices
-                  languageStats={languageStats}
-                  totalBytes={totalBytes}
-                  commitData={commitData}
+          {loading ? (
+            <LoadingScreen />
+          ) : (
+            <>
+              <Navigation />
+              <Routes>
+                <Route path="/" element={<LpHero />} />
+                <Route path="/Lifestyle" />
+                <Route
+                  path="/Web"
+                  element={
+                    <WebServices
+                      languageStats={languageStats}
+                      totalBytes={totalBytes}
+                      commitData={commitData}
+                    />
+                  }
                 />
-              }
-            />
-            <Route path="/About" />
-          </Routes>
-          <Footer />
+                <Route path="/About" />
+              </Routes>
+              <Footer />
+            </>
+          )}
         </Router>
       </Provider>
     </ThemeProvider>

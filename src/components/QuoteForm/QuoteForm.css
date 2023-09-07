@@ -152,3 +152,15 @@
   color: var(--gray);
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 1067px) {
+  .check-row,
+  .info-row {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quote-form-container h4 {
+    font-size: 2.5rem;
+  }
+}

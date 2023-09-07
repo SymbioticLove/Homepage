@@ -1,0 +1,42 @@
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: var(--dgreen);
+}
+
+.loading-screen img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.loading-screen h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0 0;
+  font-family: var(--f3);
+  color: var(--lgreen);
+}
+
+.loading-screen p {
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-family: var(--f5);
+  color: var(--lgreen);
+  font-weight: bold;
+}
+
+.loading-screen {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: auto;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
