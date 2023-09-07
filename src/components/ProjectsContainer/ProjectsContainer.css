@@ -43,7 +43,7 @@
 }
 
 .project-content.expanded {
-  max-height: 700px;
+  max-height: 750px;
 }
 
 .project-content img {
@@ -81,6 +81,7 @@
   font-size: 2rem;
   letter-spacing: 0.25rem;
   width: fit-content;
+  transition: all 0.2s ease;
 }
 
 .project-title-container img {
@@ -90,6 +91,7 @@
 
 .project-title-container:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .projects-wrapper {
