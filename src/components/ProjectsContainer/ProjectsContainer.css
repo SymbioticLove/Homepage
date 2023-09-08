@@ -154,7 +154,6 @@
   padding: 1rem;
   border: 2px solid var(--gray);
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .full-repo-link button:hover,
@@ -236,19 +235,8 @@
   color: var(--gray);
 }
 
-.full-repo-link.light {
-  color: #333;
-}
-
-.full-repo-link h5 {
-  font-family: var(--f6);
-  font-size: 1.5rem;
-  line-height: 1.7;
-  letter-spacing: 0.25rem;
-  padding: 0 0.5rem;
-  margin-top: 1rem;
-  width: 40%;
-  text-align: center;
+.pc-bottom {
+  margin-top: 10%;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -273,21 +261,30 @@
     font-size: 2.5rem;
   }
 
+  .project-column {
+    width: 100%;
+  }
+
   .project-title-container {
     font-size: 1.5rem;
-    letter-spacing: revert;
+    letter-spacing: 0.1rem;
     text-align: center;
+  }
+
+  .project-title-container img {
+    height: 25px;
+  }
+
+  .projects-container h5 {
+    font-size: 0.75rem;
   }
 
   .project-content p {
     font-size: 1rem;
+    padding: 0 0.5rem;
   }
 
   .outer-project-column {
     width: 100%;
-  }
-
-  .full-repo-link h5 {
-    width: 80%;
   }
 }

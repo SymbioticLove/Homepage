@@ -102,7 +102,7 @@ const ProjectsContainer = () => {
 
   return (
     <div className="projects-wrapper">
-      <h2 className={`title ${theme}`}>Some of Our Projects</h2>
+      <h2 className={`title ${theme}`}>Projects</h2>
       <div className={`projects-container ${theme}`}>
         <div className="outer-project-column">
           {projectsData.map(project => (
@@ -151,16 +151,12 @@ const ProjectsContainer = () => {
         </div>
       )}
       <div className={`full-repo-link ${theme}`}>
-        <h5>
-          This is just some of our work. You can view all of our projects by
-          clicking below!
-        </h5>
         <a
           href="https://github.com/SymbioticLove?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button>All Projects</button>
+          <button className="pc-bottom">All Projects</button>
         </a>
       </div>
     </div>

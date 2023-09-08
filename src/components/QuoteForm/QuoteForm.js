@@ -128,69 +128,73 @@ const QuoteForm = () => {
           </div>
         </div>
         <div className={`check-row ${theme}`}>
-          <div className="quote-form-row">
-            <label htmlFor="numberOfPages">Number of Pages</label>
-            <select
-              id="numberOfPages"
-              className={`quote-grey ${theme}`}
-              name="numberOfPages"
-              value={numberOfPages}
-              onChange={e => setNumberOfPages(e.target.value)}
-            >
-              <option value="N/A">N/A</option>
-              {Array.from({ length: 20 }, (_, index) => index + 1).map(
-                pages => (
-                  <option key={pages} value={pages}>
-                    {pages === 20 ? `${pages}+` : pages}
-                  </option>
-                ),
-              )}
-            </select>
+          <div className="small-boxes">
+            <div className="quote-form-row small-boxes2">
+              <label htmlFor="numberOfPages">Number of Pages</label>
+              <select
+                id="numberOfPages"
+                className={`quote-grey ${theme}`}
+                name="numberOfPages"
+                value={numberOfPages}
+                onChange={e => setNumberOfPages(e.target.value)}
+              >
+                <option value="N/A">N/A</option>
+                {Array.from({ length: 20 }, (_, index) => index + 1).map(
+                  pages => (
+                    <option key={pages} value={pages}>
+                      {pages === 20 ? `${pages}+` : pages}
+                    </option>
+                  ),
+                )}
+              </select>
+            </div>
+            <div className="quote-form-row small-boxes2">
+              <label htmlFor="logoDesign">Logo Design?</label>
+              <select
+                id="logoDesign"
+                className={`quote-grey ${theme}`}
+                name="logoDesign"
+                value={logoDesign ? 'Yes' : 'No'}
+                onChange={e => setLogoDesign(e.target.value === 'Yes')}
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
           </div>
-          <div className="quote-form-row">
-            <label htmlFor="logoDesign">Logo Design?</label>
-            <select
-              id="logoDesign"
-              className={`quote-grey ${theme}`}
-              name="logoDesign"
-              value={logoDesign ? 'Yes' : 'No'}
-              onChange={e => setLogoDesign(e.target.value === 'Yes')}
-            >
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div className="quote-form-row">
-            <label htmlFor="pageDesign">Page Design?</label>
-            <select
-              id="pageDesign"
-              className={`quote-grey ${theme}`}
-              name="pageDesign"
-              value={pageDesign ? 'Yes' : 'No'}
-              onChange={e => setPageDesign(e.target.value === 'Yes')}
-            >
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div className="quote-form-row">
-            <label htmlFor="brandingServices">Branding Services?</label>
-            <select
-              id="brandingServices"
-              className={`quote-grey ${theme}`}
-              name="brandingServices"
-              value={brandingServices ? 'Yes' : 'No'}
-              onChange={e => setBrandingServices(e.target.value === 'Yes')}
-            >
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
+          <div className="small-boxes">
+            <div className="quote-form-row small-boxes2">
+              <label htmlFor="pageDesign">Page Design?</label>
+              <select
+                id="pageDesign"
+                className={`quote-grey ${theme}`}
+                name="pageDesign"
+                value={pageDesign ? 'Yes' : 'No'}
+                onChange={e => setPageDesign(e.target.value === 'Yes')}
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div className="quote-form-row small-boxes2">
+              <label htmlFor="brandingServices">Branding Services?</label>
+              <select
+                id="brandingServices"
+                className={`quote-grey ${theme}`}
+                name="brandingServices"
+                value={brandingServices ? 'Yes' : 'No'}
+                onChange={e => setBrandingServices(e.target.value === 'Yes')}
+              >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
           </div>
         </div>
         <div className="quote-form-row details-row">
           <label htmlFor="details">Details</label>
           <textarea
-            className={`quote-grey ${theme} non-resizable details`}
+            className={`quote-grey ${theme} quote-non-resizable details`}
             name="details"
             value={details}
             onChange={e => setDetails(e.target.value)}

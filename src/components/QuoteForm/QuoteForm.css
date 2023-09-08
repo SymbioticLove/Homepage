@@ -107,6 +107,11 @@
   font-weight: bold;
 }
 
+.small-boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
 .check-row option,
 .drop-row option {
   font-weight: bold;
@@ -117,6 +122,10 @@
 .quote-grey.light {
   color: #333;
   background: var(--gray);
+}
+
+.small-boxes2 {
+  width: 25%;
 }
 
 .details-row {
@@ -152,6 +161,7 @@
   color: var(--gray);
   font-size: 1.5rem;
 }
+
 @media only screen and (max-width: 1067px) {
   .check-row,
   .info-row {
@@ -162,5 +172,14 @@
 @media only screen and (max-width: 767px) {
   .quote-form-container h4 {
     font-size: 2.5rem;
+  }
+
+  .quote-non-resizable {
+    min-height: 200px;
+    min-width: 275px;
+  }
+
+  .check-row label {
+    font-size: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import HashRouter
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { ThemeProvider } from './themes/ThemeContext';

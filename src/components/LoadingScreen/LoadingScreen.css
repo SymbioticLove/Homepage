@@ -20,6 +20,7 @@
   margin: 1rem 0 0;
   font-family: var(--f3);
   color: var(--lgreen);
+  padding: 0 1rem;
 }
 
 .loading-screen p {
@@ -28,6 +29,7 @@
   font-family: var(--f5);
   color: var(--lgreen);
   font-weight: bold;
+  padding: 0 2rem;
 }
 
 .loading-screen {
