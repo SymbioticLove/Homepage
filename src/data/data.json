@@ -330,6 +330,45 @@
       ]
     }
   ],
+  "about": {
+    "matthewSkills": [
+      { 
+        "title": "HTML5", 
+        "description": "I am an expert in semantic HTML, as well as modern ways of implementing HTML into websites and web applications.",
+        "image": "/html.svg"
+      },
+      { 
+        "title": "CSS3",
+        "description": "I use CSS flexbox mobile-first styling in almost all of my projects. I am familiar with CSS in JS and Tailwind.",
+        "image": "/css.png"
+      },
+      { 
+        "title": "JavaScript",
+        "description": "I am experienced with vanilla JavaScript and with many common npm libraries including Redux, Axios, GSAP, Node.js, and Express.js.",
+        "image": "/jslogo.svg"
+      },
+      { 
+        "title": "ReactJS",
+        "description": "I am highly experienced with React, webhooks, and related libraries such as Redux and React Native.",
+        "image": "/reactlogo.svg"
+      },
+      { 
+        "title": "Python",
+        "description": "I am highly experienced with Python in many regards, from AI/ML to data visualization and reporting, and libraries such as BS4, NLTK, TensorFlow, Pandas, and Numpy.",
+        "image": "/pylogo.svg"
+      }
+    ],
+    "jesselaSkills": [
+      { 
+        "title": "Eating",
+        "description": "Eating that good food"
+      },
+      { 
+        "title": "Sleeping", 
+        "description": "Sleeping in the sun"
+      }
+    ]
+  },
   "footer": {
     "starText": "If you're seeing this, something that should be here isn't here yet! Symbiotic.love is still in an early phase of rebuilding. Check back daily, and if you have any suggestions, please send them to feedback@symbiotic.love"
   }
