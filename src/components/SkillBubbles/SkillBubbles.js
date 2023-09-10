@@ -19,34 +19,38 @@ const SkillBubbles = ({ skillsData }) => {
   };
 
   return (
-    <div className="skill-bubbles-container">
-      {skillsData.map((skill, index) => (
-        <div
-          className={`skill-bubble ${
-            index === expandedSkill ? 'expanded' : ''
-          }`}
-          key={index}
-          onClick={() => handleBubbleClick(index)}
-          style={
-            index === expandedSkill
-              ? { backgroundImage: `url(${skill.image})` }
-              : null
-          } // Apply background image only when expanded
-        >
-          <div className="skill-title">{skill.title}</div>
-          {index === expandedSkill && (
-            <div
-              className="skill-description"
-              style={{
-                opacity: showDescription ? 1 : 0, // Use opacity to hide/show
-                visibility: showDescription ? 'visible' : 'hidden', // Hide/show but keep the space
-              }}
-            >
-              {skill.description}
-            </div>
-          )}
-        </div>
-      ))}
+    <div>
+      <h1 className="sb-main-title">My Skills</h1>
+      <p className="sb-main-subtitle">Click/Tap to Expand!</p>
+      <div className="skill-bubbles-container">
+        {skillsData.map((skill, index) => (
+          <div
+            className={`skill-bubble ${
+              index === expandedSkill ? 'expanded' : ''
+            }`}
+            key={index}
+            onClick={() => handleBubbleClick(index)}
+            style={
+              index === expandedSkill
+                ? { backgroundImage: `url(${skill.image})` }
+                : null
+            } // Apply background image only when expanded
+          >
+            <div className="skill-title">{skill.title}</div>
+            {index === expandedSkill && (
+              <div
+                className="skill-description"
+                style={{
+                  opacity: showDescription ? 1 : 0, // Use opacity to hide/show
+                  visibility: showDescription ? 'visible' : 'hidden', // Hide/show but keep the space
+                }}
+              >
+                {skill.description}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

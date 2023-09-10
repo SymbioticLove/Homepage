@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import SkillsContainer from '../SkillsContainer/SkillsContainer';
+import AboutHeader from '../AboutHeader/AboutHeader';
 import './AboutSection.css';
 
 const AboutSection = () => {
@@ -17,6 +18,7 @@ const AboutSection = () => {
 
   return (
     <div>
+      <AboutHeader />
       {renderPerson(aboutSectionData.section1, 'matthew-container')}
       <div className="skills">
         <div className="image-container">

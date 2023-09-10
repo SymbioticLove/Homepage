@@ -3,19 +3,43 @@
 }
 
 .image-container {
-    padding: 1%;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 1%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
-    border-radius: 15px;
-    height: 900px;
-    width: 400px;
+  height: 900px;
+  width: 400px;
+  border-radius: 20px;
 }
 
 .skills-container {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1067px) {
+  .image-container {
+    padding: 0;
     width: 100%;
+  }
+
+  .image-container img {
+    height: 400px;
+    width: auto;
+    border-radius: 15px;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skills:last-child {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 767px) {
 }

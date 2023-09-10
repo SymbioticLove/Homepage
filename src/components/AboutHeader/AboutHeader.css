@@ -1,0 +1,14 @@
+.about-header {
+    justify-content: center;
+    padding: .5%;
+    position: relative;
+}
+
+.about-header h2 {
+    font-family: var(--f5);
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+    width: 50%;
+    line-height: 1.75;
+}

@@ -11,6 +11,25 @@
   justify-content: space-between;
 }
 
+.sb-main-title {
+  font-family: var(--f1);
+  font-size: 3rem;
+  letter-spacing: .25rem;
+  text-align: center;
+  text-shadow: 3px 3px 6px #000;
+  color: var(--gray);
+  margin: 0;
+}
+
+.sb-main-subtitle {
+  font-family: var(--f3);
+  color: var(--gray);
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: .15rem;
+  margin-top: .25rem;
+}
+
 .skill-bubble {
   background: linear-gradient(
     45deg,
@@ -47,6 +66,7 @@
   flex-grow: 1 !important;
   max-width: 350px;
   flex: 0 0 calc(32% - 5%);
+  box-shadow: 0 0 15px #000;
 }
 
 .skill-bubble.expanded {
@@ -61,6 +81,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 0 0 8px #000;
 }
 
 .skill-bubble.expanded .skill-title {
@@ -70,6 +91,8 @@
 
 .skill-bubble:hover {
   background-color: var(--gray);
+  transform: scale(.97);
+  box-shadow: 0 0 8px #000;
 }
 
 .skill-bubble:hover .skill-title {
@@ -78,6 +101,7 @@
 
 .skill-bubble.expanded:hover {
   background-color: var(--dgreen);
+  transform: none;
 }
 
 .skill-bubble.expanded:hover .skill-title {
@@ -111,17 +135,30 @@
   height: 65%;
 }
 
-@media only screen and (max-width: 1067px) {
-  .skill-bubbles-container {
-    flex-direction: column;
-  }
-
+@media only screen and (max-width: 1300px) and (min-width: 1068px) {
   .skill-bubble {
-    max-width: 350px;
+    padding: 3%;
+  }
+}
+
+@media only screen and (max-width: 1067px) {
+  .sb-main-title {
+    margin-top: 1rem;
+  }
+  
+  .skill-bubble {
+    max-width: 250px;
     border-radius: 50%;
+    min-width: 200px;
   }
 
   .skill-bubble.expanded {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skill-title {
+    font-size: 2.25rem;
   }
 }

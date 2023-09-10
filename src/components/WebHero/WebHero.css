@@ -1,3 +1,4 @@
+.about-header,
 .webHero-banner {
   display: flex;
   flex-direction: column;
@@ -31,6 +32,7 @@
   box-shadow: 3px 3px 6px #000;
 }
 
+.about-header h1,
 .webHero-banner h1 {
   font-family: var(--f3);
   font-size: 4rem;

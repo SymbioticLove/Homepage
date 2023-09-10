@@ -331,6 +331,10 @@
     }
   ],
   "about": {
+    "aboutHeader": {
+      "title": "Meet our Team",
+      "subtitle": "We are a dedicated husband and wife team devoted to customer satisfaction, as well as avid nature and animal lovers"
+    },
     "section1" : {
       "name": "Matthew Ford",
       "title": "CEO and CTO",
@@ -381,7 +385,7 @@
       },
       { 
         "title": "DevOps",
-        "description": "I am intricately famailiar with the deployment process for web applications as well as DNS setup and web hosting",
+        "description": "I am intimately famailiar with the deployment process for web applications as well as DNS setup and web hosting",
         "image": "/devops.png"
       },
       { 
@@ -391,7 +395,7 @@
       },
       { 
         "title": "GPT and LLM's",
-        "description": "I have been using LLMs since they first became popular, and have become masterful in interactions with them. I use them daily in my work, and they have saved me hundreds or perhaps thousands of hours",
+        "description": "I have been using LLMs since they first became popular in their recent capacity, and have become masterful in interactions with them. I use them daily in my work, and they have saved me hundreds or perhaps thousands of hours",
         "image": "/openai.svg"
       },
       { 
