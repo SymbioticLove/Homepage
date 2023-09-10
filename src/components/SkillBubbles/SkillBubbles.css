@@ -69,11 +69,11 @@
 }
 
 .skill-bubble:hover {
-  background-color: var(--lgreen);
+  background-color: var(--gray);
 }
 
 .skill-bubble:hover .skill-title {
-  color: var(--dgreen);
+  color: #333;
 }
 
 .skill-bubble.expanded:hover {

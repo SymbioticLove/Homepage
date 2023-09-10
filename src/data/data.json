@@ -416,7 +416,7 @@
       },
       { 
         "title": "Minor Skills",
-        "description": "My minor skills include Vue.js, SQL, Rust, Ruby, and Electron. I can write in these languages/frameworks, but am less proficient than in those listed above",
+        "description": "My minor skills include Vue.js, Django, SQL, Rust, Ruby, and Electron. I can write in these languages/frameworks, but am less proficient than in those listed above",
         "image": "/development.png"
       }
     ],
