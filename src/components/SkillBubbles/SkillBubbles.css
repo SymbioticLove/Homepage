@@ -1,15 +1,36 @@
 .skill-bubbles-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.skill-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 .skill-bubble {
-  background-color: var(--dgreen);
+  background: linear-gradient(
+    45deg,
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent),
+    var(--dgreen),
+    var(--accent),
+    var(--pink),
+    var(--accent)
+  );
+  animation: gradientAnimation 700s infinite;
+  background-size: 3000% 100%;
   color: var(--gray);
-  padding: 3%;
+  padding: 1%;
   margin: 10px;
-  border-radius: 60% 52% 46% 55%;
+  border-radius: 50%;
   cursor: pointer;
   height: 150px;
   display: flex;
@@ -17,27 +38,32 @@
   align-items: center;
   text-align: center;
   font-weight: bold;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   transition: all 0.3s ease;
-  background-blend-mode: color-burn;
+  background-blend-mode: color;
   border: 2px solid var(--gray);
   transform-origin: center center;
+  flex-grow: 1 !important;
+  max-width: 350px;
+  flex: 0 0 calc(32% - 5%);
 }
 
 .skill-bubble.expanded {
   border-radius: 15px;
-  width: 25%;
+  max-width: initial;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 5% 3%;
+  padding: 3% 1%;
   transform-origin: center center;
+  background: var(--dgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .skill-bubble.expanded .skill-title {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .skill-bubble:hover {
@@ -46,7 +72,6 @@
 
 .skill-bubble:hover .skill-title {
   color: var(--dgreen);
-  text-shadow: none;
 }
 
 .skill-bubble.expanded:hover {
@@ -62,7 +87,6 @@
   font-family: var(--f3);
   font-size: 3rem;
   letter-spacing: 0.35rem;
-  text-shadow: 2px 2px 2px #000;
   margin-bottom: 20%;
   margin: 0;
 }
@@ -83,4 +107,19 @@
 }
 .inner-div:last-child {
   height: 65%;
+}
+
+@media only screen and (max-width: 1067px) {
+  .skill-bubbles-container {
+    flex-direction: column;
+  }
+
+  .skill-bubble {
+    max-width: 350px;
+    border-radius: 50%;
+  }
+
+  .skill-bubble.expanded {
+    width: 50%;
+  }
 }

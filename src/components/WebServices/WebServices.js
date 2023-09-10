@@ -3,7 +3,6 @@ import WebHero from '../WebHero/WebHero';
 import ProjectsContainer from '../ProjectsContainer/ProjectsContainer';
 import PropTypes from 'prop-types';
 import QuoteForm from '../QuoteForm/QuoteForm';
-import SkillsContainer from '../SkillsContainer/SkillsContainer';
 
 const WebServices = ({ languageStats, totalBytes, commitData }) => {
   return (
@@ -17,8 +16,6 @@ const WebServices = ({ languageStats, totalBytes, commitData }) => {
       </div>
       <QuoteForm />
       <ProjectsContainer />
-      <SkillsContainer className="matthew-container" />
-      <SkillsContainer className="jessela-container" />
     </div>
   );
 };

@@ -331,31 +331,93 @@
     }
   ],
   "about": {
+    "section1" : {
+      "name": "Matthew Ford",
+      "title": "CEO and CTO",
+      "phone": "(912)438-1768",
+      "email": "matthew@symbiotic.love"
+    },
+    "section2" : {
+      "name": "Jessela Sproat",
+      "title": "CEO and CDO",
+      "phone": "(602)663-3005",
+      "email": "jessela@symbiotic.love"
+    },
     "matthewSkills": [
       { 
         "title": "HTML5", 
-        "description": "I am an expert in semantic HTML, as well as modern ways of implementing HTML into websites and web applications.",
+        "description": "I am an expert with semantic HTML, as well as modern ways of implementing HTML into websites and web applications",
         "image": "/html.svg"
       },
       { 
         "title": "CSS3",
-        "description": "I use CSS flexbox mobile-first styling in almost all of my projects. I am familiar with CSS in JS and Tailwind.",
+        "description": "I use CSS flexbox mobile-first styling in almost all of my projects. I am familiar with CSS in JS and Tailwind",
         "image": "/css.png"
       },
       { 
         "title": "JavaScript",
-        "description": "I am experienced with vanilla JavaScript and with many common npm libraries including Redux, Axios, GSAP, Node.js, and Express.js.",
+        "description": "I am experienced with vanilla JavaScript and with many common npm libraries including Redux, Axios, GSAP, Node.js, and Express.js",
         "image": "/jslogo.svg"
       },
       { 
         "title": "ReactJS",
-        "description": "I am highly experienced with React, webhooks, and related libraries such as Redux and React Native.",
+        "description": "I am highly experienced with React, webhooks, and related libraries such as Redux and React Native",
         "image": "/reactlogo.svg"
       },
       { 
         "title": "Python",
-        "description": "I am highly experienced with Python in many regards, from AI/ML to data visualization and reporting, and libraries such as BS4, NLTK, TensorFlow, Pandas, and Numpy.",
+        "description": "I am highly experienced with Python in many regards, from AI/ML to data visualization and reporting and libraries such as BS4, NLTK, TensorFlow, Pandas, and Numpy",
         "image": "/pylogo.svg"
+      },
+      { 
+        "title": "Flask",
+        "description": "I am proficient in creating and using APIs and server components for headless architectures through Python's Flask micro framework",
+        "image": "/flasklogo.svg"
+      },
+      { 
+        "title": "Agile Methodology",
+        "description": "I am familiar with Agile methodology, Kanban specifically, and use it for all of my projects",
+        "image": "/agile.png"
+      },
+      { 
+        "title": "DevOps",
+        "description": "I am intricately famailiar with the deployment process for web applications as well as DNS setup and web hosting",
+        "image": "/devops.png"
+      },
+      { 
+        "title": "Git",
+        "description": "I have over 30 projects and 600,000 bytes of code publicly available on GitHub and am familiar with the web application, desktop application, and CLI, in addition to Actions workflows and Projects",
+        "image": "/github.svg"
+      },
+      { 
+        "title": "GPT and LLM's",
+        "description": "I have been using LLMs since they first became popular, and have become masterful in interactions with them. I use them daily in my work, and they have saved me hundreds or perhaps thousands of hours",
+        "image": "/openai.svg"
+      },
+      { 
+        "title": "MidJourney",
+        "description": "I have honed my skills with MidJourney, and am now capable of creating consistent and truly one-of-a-kind artworks for my pages, programs, games, and more",
+        "image": "/mj.png"
+      },
+      { 
+        "title": "SEO",
+        "description": "I am highly proficient with SEO in many regards including on-page SEO, backlinking, link building, keyword research, content optimization, and UX",
+        "image": "/seo.png"
+      },
+      { 
+        "title": "WCAG",
+        "description": "I am well-versed in WCAG, and can perform both accessibility reviews and optimization",
+        "image": "/accessibility.png"
+      },
+      { 
+        "title": "Copywriting",
+        "description": "I am skilled at providing highly professional and concise copywrite for many subjects, especially those involved in portfolio and resume building",
+        "image": "/copywriting.png"
+      },
+      { 
+        "title": "Minor Skills",
+        "description": "My minor skills include Vue.js, SQL, Rust, Ruby, and Electron. I can write in these languages/frameworks, but am less proficient than in those listed above",
+        "image": "/development.png"
       }
     ],
     "jesselaSkills": [
@@ -366,6 +428,10 @@
       { 
         "title": "Sleeping", 
         "description": "Sleeping in the sun"
+      },
+      { 
+        "title": "Working", 
+        "description": "Working hard af boi at 2 jobs + hustles!"
       }
     ]
   },

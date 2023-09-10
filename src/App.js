@@ -1,12 +1,13 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import HashRouter
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { ThemeProvider } from './themes/ThemeContext';
 import WebServices from './components/WebServices/WebServices';
 import Footer from './components/Footer/Footer';
 import LpHero from './components/LpHero/LpHero';
+import AboutSection from './components/AboutSection/AboutSection';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import Navigation from './components/Navigation/Navigation';
 
@@ -141,7 +142,7 @@ function App() {
                     />
                   }
                 />
-                <Route path="/About" />
+                <Route path="/About" element={<AboutSection />} />
               </Routes>
               <Footer />
             </>
