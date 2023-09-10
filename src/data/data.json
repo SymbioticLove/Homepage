@@ -426,16 +426,44 @@
     ],
     "jesselaSkills": [
       { 
-        "title": "Eating",
-        "description": "Eating that good food"
+        "title": "Adobe Illustrator",
+        "description": "I am skilled at logo creation, wireframing, and advanced usage of Adobe Illustrator",
+        "image": "/illustrator.svg"
       },
       { 
-        "title": "Sleeping", 
-        "description": "Sleeping in the sun"
+        "title": "Web Design",
+        "description": "I am a skilled web designer with a strong understanding of color contrast, typography, and heirarchy",
+        "image": "/webd.png"
       },
       { 
-        "title": "Working", 
-        "description": "Working hard af boi at 2 jobs + hustles!"
+        "title": "Logo Design",
+        "description": "I am a skilled logo designer, and have designed several logos for my own and other businesses",
+        "image": "/samplelogo.png"
+      },
+      { 
+        "title": "Vintage Curation", 
+        "description": "I am a curator of vintage clothing and accessories and am able to pick one-of-a-kind pieces for our secondhand store",
+        "image": "/clothes.png"
+      },
+      { 
+        "title": "MidJourney", 
+        "description": "I am expertly skilled with MidJourney and it's practical application in web and logo design",
+        "image": "/mj.png"
+      },
+      { 
+        "title": "GPT", 
+        "description": "I am moderately skilled with GPT and advanced interaction techniques such as SoT, WoT, and CoT",
+        "image": "/openai.svg"
+      },
+      { 
+        "title": "CSS3", 
+        "description": "I have an understanding of CSS principals for use in my design work",
+        "image": "/css.png"
+      },
+      { 
+        "title": "HTML5", 
+        "description": "I have a basic understanding of semantic HTML, and can write basic HTML5 code",
+        "image": "/html.svg"
       }
     ]
   },

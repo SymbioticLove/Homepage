@@ -12,22 +12,31 @@
 }
 
 .sb-main-title {
-  font-family: var(--f1);
-  font-size: 3rem;
-  letter-spacing: .25rem;
+  font-family: var(--f6);
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
   text-align: center;
   text-shadow: 3px 3px 6px #000;
   color: var(--gray);
   margin: 0;
 }
 
+.sb-main-title.light {
+  color: #333;
+  text-shadow: none;
+}
+
 .sb-main-subtitle {
   font-family: var(--f3);
   color: var(--gray);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  letter-spacing: .15rem;
-  margin-top: .25rem;
+  letter-spacing: 0.15rem;
+  margin-top: 0.25rem;
+}
+
+.sb-main-subtitle.light {
+  color: #333;
 }
 
 .skill-bubble {
@@ -91,7 +100,7 @@
 
 .skill-bubble:hover {
   background-color: var(--gray);
-  transform: scale(.97);
+  transform: scale(0.97);
   box-shadow: 0 0 8px #000;
 }
 
@@ -145,7 +154,7 @@
   .sb-main-title {
     margin-top: 1rem;
   }
-  
+
   .skill-bubble {
     max-width: 250px;
     border-radius: 50%;

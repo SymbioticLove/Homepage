@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useTheme } from '../../themes/ThemeContext';
 import './SkillBubbles.css';
 
 const SkillBubbles = ({ skillsData }) => {
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [showDescription, setShowDescription] = useState(false);
+
+  const { theme } = useTheme();
 
   const handleBubbleClick = index => {
     setExpandedSkill(index === expandedSkill ? null : index);
@@ -20,8 +23,8 @@ const SkillBubbles = ({ skillsData }) => {
 
   return (
     <div>
-      <h1 className="sb-main-title">My Skills</h1>
-      <p className="sb-main-subtitle">Click/Tap to Expand!</p>
+      <h2 className={`sb-main-title ${theme}`}>My Skills</h2>
+      <p className={`sb-main-subtitle ${theme}`}>Click/Tap to Expand!</p>
       <div className="skill-bubbles-container">
         {skillsData.map((skill, index) => (
           <div

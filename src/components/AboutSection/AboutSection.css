@@ -1,5 +1,8 @@
 .skills {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 3%;
 }
 
 .image-container {
@@ -8,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .image-container img {
@@ -20,6 +24,44 @@
   width: 100%;
 }
 
+.name-and-title {
+  color: var(--gray);
+  width: 90%;
+}
+
+.name-and-title.light {
+  color: #333;
+}
+
+.jnat {
+  text-align: right;
+}
+
+.name-and-title h1 {
+  font-family: var(--f3);
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  letter-spacing: .15rem;
+}
+
+.name-and-title h2 {
+  font-family: var(--f5);
+  font-size: 1.5rem;
+  margin-top: 0;
+  letter-spacing: .1rem;
+}
+
+.name-and-title p {
+  font-size: 1.1rem;
+  margin: .25rem 0 0;
+  font-family: var(--f5);
+  letter-spacing: .05rem;
+}
+
+.name-and-title p:last-child {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1067px) {
   .image-container {
     padding: 0;
@@ -30,6 +72,12 @@
     height: 400px;
     width: auto;
     border-radius: 15px;
+  }
+
+  .name-and-title {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
   }
 
   .skills {
