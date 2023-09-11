@@ -52,17 +52,32 @@
 }
 
 .name-and-title p {
+  margin: 0;
+  font-family: var(--f5);
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+}
+
+.accordion-content3 {
   font-size: 1.1rem;
   margin: 0.25rem 0 0;
   font-family: var(--f5);
   letter-spacing: 0.05rem;
 }
 
+.accordion-item3 {
+  color: var(--gray);
+}
+
+.accordion-item3.light {
+  color: #333;
+}
+
 .name-and-title p:last-child {
   margin-bottom: 1rem;
 }
 
-.about-paragraph {
+.about-paragraph3 {
   width: 90%;
   margin: 3% auto 0;
   text-align: center;

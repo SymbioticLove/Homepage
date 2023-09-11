@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import SkillsContainer from '../SkillsContainer/SkillsContainer';
 import { useTheme } from '../../themes/ThemeContext';
+import AboutAccordion from '../AboutAccordion/AboutAccordion';
 
 const AboutMatthew = () => {
   const aboutSectionData = useSelector(state => state.about.about);
@@ -27,9 +28,10 @@ const AboutMatthew = () => {
           <SkillsContainer className="matthew-container" />
         </div>
       </div>
-      <p className={`about-paragraph ${theme}`}>
-        {aboutSectionData.section1.aboutMe}
-      </p>
+      <AboutAccordion
+        title="About Me"
+        content={aboutSectionData.section1.aboutMe}
+      />
     </div>
   );
 };

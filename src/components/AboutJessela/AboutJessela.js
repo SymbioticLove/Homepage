@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import SkillsContainer from '../SkillsContainer/SkillsContainer';
+import AboutAccordion from '../AboutAccordion/AboutAccordion';
 import { useTheme } from '../../themes/ThemeContext';
 
 const AboutJessela = () => {
@@ -27,9 +28,10 @@ const AboutJessela = () => {
           <img src="https://placehold.co/400x900" alt="Jessela" />
         </div>
       </div>
-      <p className={`about-paragraph ${theme}`}>
-        {aboutSectionData.section2.aboutMe}
-      </p>
+      <AboutAccordion
+        title="About Me"
+        content={aboutSectionData.section2.aboutMe}
+      />
     </div>
   );
 };

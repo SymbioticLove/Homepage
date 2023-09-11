@@ -23,7 +23,7 @@ const SkillBubbles = ({ skillsData }) => {
 
   return (
     <div>
-      <h2 className={`sb-main-title ${theme}`}>My Skills</h2>
+      <h2 className={`sb-main-title ${theme}`}>Skills</h2>
       <p className={`sb-main-subtitle ${theme}`}>Click/Tap to Expand!</p>
       <div className="skill-bubbles-container">
         {skillsData.map((skill, index) => (
