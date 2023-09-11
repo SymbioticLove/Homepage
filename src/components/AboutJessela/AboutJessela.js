@@ -27,6 +27,9 @@ const AboutJessela = () => {
           <img src="https://placehold.co/400x900" alt="Jessela" />
         </div>
       </div>
+      <p className={`about-paragraph ${theme}`}>
+        {aboutSectionData.section2.aboutMe}
+      </p>
     </div>
   );
 };

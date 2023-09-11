@@ -27,6 +27,9 @@ const AboutMatthew = () => {
           <SkillsContainer className="matthew-container" />
         </div>
       </div>
+      <p className={`about-paragraph ${theme}`}>
+        {aboutSectionData.section1.aboutMe}
+      </p>
     </div>
   );
 };

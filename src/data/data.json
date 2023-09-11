@@ -333,19 +333,21 @@
   "about": {
     "aboutHeader": {
       "title": "Meet our Team",
-      "subtitle": "We are a dedicated husband and wife team devoted to customer satisfaction, as well as avid nature and animal lovers"
+      "subtitle": "We are a dedicated husband and wife team devoted to customer satisfaction as well as avid nature and animal lovers"
     },
     "section1" : {
       "name": "Matthew Ford",
       "title": "CEO and CTO",
       "phone": "(912)438-1768",
-      "email": "matthew@symbiotic.love"
+      "email": "matthew@symbiotic.love",
+      "aboutMe": "I am a full-stack solutions engineer, a web technologies sepcialist, and the CEO and CTO of Symbiotic Love. I love creating elegant solutions to complex problems, simplifying the experience of the web for businesses and individuals alike, and meeting with clients to help them tackle their biggest technological hurdles head-on. I am an avid supporter of the responsible use of AI and its ability to change the way we work and live in addition to its ability to aide in learning complex subjects. Prior to this, I spent 11 years in the service industry managing many popular restaurants across the country, notably Logan's Roadhouse and IHOP. Throughout this time I developed excellent people and dispute resolution skills, honed my business acumen, and gained vital experience in managing both assets and people. In my free time I enjoy playing RPGs, reading a variety of genres, practicing my violin, hiking, and camping. I am originally from Kansas City, Missouri, and recently relocated to Phoenix from Savannah, Georgia."
     },
     "section2" : {
       "name": "Jessela Sproat",
       "title": "CEO and CDO",
       "phone": "(602)663-3005",
-      "email": "jessela@symbiotic.love"
+      "email": "jessela@symbiotic.love",
+      "aboutMe": ""
     },
     "matthewSkills": [
       { 
