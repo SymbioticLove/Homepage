@@ -25,5 +25,5 @@ export const ThemeProvider = ({ children }) => {
 };
 
 ThemeProvider.propTypes = {
-  children: PropTypes.node.isRequired, // Validate 'children' prop
+  children: PropTypes.node.isRequired,
 };
